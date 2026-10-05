@@ -14,6 +14,8 @@
   <ItemGroup>
     <PackageReference Include="CUE4Parse" Version="1.2.2.202610" />
     <PackageReference Include="CUE4Parse-Conversion" Version="1.2.2.202610" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="SkiaSharp" Version="[2.88.9]" />
   </ItemGroup>
 
 </Project>

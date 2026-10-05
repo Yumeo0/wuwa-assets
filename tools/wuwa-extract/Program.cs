@@ -10,6 +10,8 @@ using CUE4Parse.UE4.Objects.Core.Misc;
 using CUE4Parse.UE4.Versions;
 using CUE4Parse_Conversion.Options;
 using CUE4Parse_Conversion.Textures;
+using Newtonsoft.Json;
+using SkiaSharp;
 
 namespace WuwaExtract;
 
@@ -18,6 +20,12 @@ internal static class Program
     private const StringComparison Ico = StringComparison.OrdinalIgnoreCase;
     private const string AkiMarker = "Aki/";
     private const string UassetExtension = ".uasset";
+    private const string AtlasPrefix = "T_TPI_";
+    private const string AtlasSuffix = "_UIAtlas";
+    private const string ImporterPrefix = "TPI_";
+    private const string ImporterExportType = "LGUITexturePackerImporterData";
+    private const string SpriteDataExportType = "LGUITexturePackerSpriteData";
+    private const string TextureDataExportType = "LGUITextureData";
     private const string DefaultKeysEndpoint = "https://yarik0chka.github.io/wuwa-keys/keys.json";
     private const string FallbackMainKey = "0x6F80948821CA338739A24D4D9F778BCAC0996B2EF2A73897A789C68AFF05174E";
 
@@ -186,9 +194,9 @@ internal static class Program
             targetSet[target] = target;
         }
 
-        var items = new Dictionary<string, ExtractionItem>(StringComparer.OrdinalIgnoreCase);
-        var marked = 0;
-        foreach (var (path, file) in provider.Files)
+        var matches = new List<(string ObjectPath, string Relative, string Canonical, string Tail)>();
+        var importersByDirectory = new Dictionary<string, List<string>>(StringComparer.OrdinalIgnoreCase);
+        foreach (var (path, _) in provider.Files)
         {
             if (!path.EndsWith(UassetExtension, Ico)) continue;
 
@@ -198,18 +206,24 @@ internal static class Program
             var relative = path[(markerIndex + AkiMarker.Length)..];
             if (relative.Length == 0) continue;
 
+            var objectPath = path[..^UassetExtension.Length];
+            if (Path.GetFileName(relative).StartsWith(ImporterPrefix, Ico))
+            {
+                var directory = objectPath[..objectPath.LastIndexOf('/')];
+                if (!importersByDirectory.TryGetValue(directory, out var importers))
+                {
+                    importersByDirectory[directory] = importers = [];
+                }
+                importers.Add(objectPath);
+            }
+
             var dirEnd = relative.LastIndexOf('/');
             while (dirEnd > 0)
             {
                 var candidate = relative[..dirEnd];
                 if (targetSet.TryGetValue(candidate, out var canonical))
                 {
-                    var tail = relative[dirEnd..];
-                    var outputRel = canonical + tail[..^UassetExtension.Length] + ".png";
-                    var outputPath = Path.Combine(outDir, outputRel.Replace('/', Path.DirectorySeparatorChar));
-                    var objectPath = path[..^UassetExtension.Length];
-                    items.TryAdd(outputPath, new ExtractionItem(objectPath, relative, outputPath));
-                    marked++;
+                    matches.Add((objectPath, relative, canonical, relative[dirEnd..]));
                     break;
                 }
 
@@ -217,11 +231,31 @@ internal static class Program
             }
         }
 
-        if (marked == 0)
+        if (matches.Count == 0)
         {
             Console.Error.WriteLine("error: no UI textures matched the target directories inside the archives.");
             Console.Error.WriteLine("Archive paths are expected to contain \"Client/Content/Aki/...\".");
             return 1;
+        }
+
+        var importerCache = new Dictionary<string, AtlasImporter?>(StringComparer.OrdinalIgnoreCase);
+        var items = new Dictionary<string, ExtractionItem>(StringComparer.OrdinalIgnoreCase);
+        var spriteItems = new List<ExtractionItem>();
+        foreach (var (objectPath, relative, canonical, tail) in matches)
+        {
+            var outputRel = canonical + tail[..^UassetExtension.Length] + ".png";
+            var outputPath = Path.Combine(outDir, outputRel.Replace('/', Path.DirectorySeparatorChar));
+            items.TryAdd(outputPath, new ExtractionItem(objectPath, relative, outputPath, null));
+
+            if (options.NoSplitAtlas) continue;
+            if (!IsAtlasAsset(Path.GetFileName(relative))) continue;
+
+            spriteItems.AddRange(ExpandAtlas(provider, objectPath, outputPath, importersByDirectory, importerCache));
+        }
+
+        foreach (var spriteItem in spriteItems)
+        {
+            items[spriteItem.OutputPath] = spriteItem;
         }
 
         var pending = new List<ExtractionItem>();
@@ -236,13 +270,13 @@ internal static class Program
             pending.Add(item);
         }
 
-        Console.WriteLine($"{items.Count} matched texture(s): {pending.Count} to extract, {skipped} already present");
+        Console.WriteLine($"{items.Count} matched asset(s): {pending.Count} to extract, {skipped} already present");
 
         if (options.DryRun)
         {
             foreach (var item in pending)
             {
-                Console.WriteLine("  " + item.RelativePath);
+                Console.WriteLine("  " + Path.GetRelativePath(outDir, item.OutputPath).Replace('\\', '/'));
             }
             Console.WriteLine($"dry run: would write {pending.Count} PNG file(s)");
             return 0;
@@ -256,46 +290,67 @@ internal static class Program
 
         var stopwatch = Stopwatch.StartNew();
         var extracted = 0;
+        var sprites = 0;
+        var ignored = 0;
         var failed = 0;
         var failureLines = new List<string>();
-        for (var i = 0; i < pending.Count; i++)
+        var atlasBitmaps = new Dictionary<string, SKBitmap>(StringComparer.OrdinalIgnoreCase);
+        try
         {
-            var item = pending[i];
-            try
+            for (var i = 0; i < pending.Count; i++)
             {
-                var obj = provider.LoadPackageObject(item.ObjectPath);
-                if (obj is not UTexture texture)
+                var item = pending[i];
+                try
                 {
-                    throw new InvalidDataException($"export is {obj.GetType().Name}, not a UTexture");
-                }
+                    if (item.Sprite is { } sprite)
+                    {
+                        var atlas = GetAtlasBitmap(provider, atlasBitmaps, item.ObjectPath);
+                        using var cropped = CropSprite(atlas, sprite);
+                        using var image = SKImage.FromBitmap(cropped);
+                        using var data = image.Encode(SKEncodedImageFormat.Png, 100);
+                        WriteFile(item.OutputPath, data.ToArray());
+                        extracted++;
+                        sprites++;
+                    }
+                    else
+                    {
+                        var obj = provider.LoadPackageObject(item.ObjectPath);
+                        if (obj is UTexture texture)
+                        {
+                            WriteFile(item.OutputPath, EncodeTexture(texture, atlasBitmaps, item.ObjectPath));
+                            extracted++;
+                        }
+                        else if (obj.ExportType is ImporterExportType or SpriteDataExportType or TextureDataExportType)
+                        {
+                            ignored++;
+                            continue;
+                        }
+                        else
+                        {
+                            throw new InvalidDataException($"export is {obj.ExportType}, not a UTexture");
+                        }
+                    }
 
-                var decoded = texture.Decode(ETexturePlatform.DesktopMobile);
-                if (decoded is null)
-                {
-                    throw new InvalidDataException("texture has no decodable mip");
+                    if (!options.Quiet)
+                    {
+                        Console.WriteLine($"[{i + 1}/{pending.Count}] {item.OutputPath}");
+                    }
                 }
-
-                var png = decoded.Encode(ETextureFormat.Png, false, out _);
-                var directory = Path.GetDirectoryName(item.OutputPath);
-                if (!string.IsNullOrEmpty(directory))
+                catch (Exception e)
                 {
-                    Directory.CreateDirectory(directory);
-                }
-                File.WriteAllBytes(item.OutputPath, png);
-                extracted++;
-
-                if (!options.Quiet)
-                {
-                    Console.WriteLine($"[{i + 1}/{pending.Count}] {item.OutputPath}");
+                    failed++;
+                    if (failureLines.Count < 25)
+                    {
+                        failureLines.Add($"{item.RelativePath}: {e.Message}");
+                    }
                 }
             }
-            catch (Exception e)
+        }
+        finally
+        {
+            foreach (var bitmap in atlasBitmaps.Values)
             {
-                failed++;
-                if (failureLines.Count < 25)
-                {
-                    failureLines.Add($"{item.RelativePath}: {e.Message}");
-                }
+                bitmap.Dispose();
             }
         }
 
@@ -309,8 +364,178 @@ internal static class Program
             Console.Error.WriteLine($"FAIL ... and {failed - failureLines.Count} more");
         }
 
-        Console.WriteLine($"Done in {stopwatch.Elapsed:mm\\:ss\\.ff}: {extracted} extracted, {skipped} skipped, {failed} failed");
+        Console.WriteLine($"Done in {stopwatch.Elapsed:mm\\:ss\\.ff}: {extracted} extracted ({sprites} sprites), {ignored} ignored, {skipped} skipped, {failed} failed");
         return 0;
+    }
+
+    private static bool IsAtlasAsset(string fileName) =>
+        fileName.StartsWith(AtlasPrefix, Ico) && fileName.Contains(AtlasSuffix, Ico);
+
+    private static IEnumerable<ExtractionItem> ExpandAtlas(
+        IFileProvider provider,
+        string atlasObjectPath,
+        string atlasOutputPath,
+        IReadOnlyDictionary<string, List<string>> importersByDirectory,
+        Dictionary<string, AtlasImporter?> importerCache)
+    {
+        var normalizedAtlas = NormalizeAssetPath(atlasObjectPath);
+        var directory = atlasObjectPath[..atlasObjectPath.LastIndexOf('/')];
+
+        var importer = LoadImporter(provider, DeriveImporterPath(provider, atlasObjectPath), importerCache)
+                       ?? FindImporterForAtlas(provider, directory, importersByDirectory, normalizedAtlas, importerCache);
+        if (importer is null) yield break;
+
+        var page = importer.AtlasPaths.FindIndex(p => p.Equals(normalizedAtlas, Ico));
+        if (page < 0) yield break;
+
+        var outputDirectory = atlasOutputPath[..atlasOutputPath.LastIndexOf(Path.DirectorySeparatorChar)];
+        for (var index = 0; index < importer.Sprites.Count; index++)
+        {
+            if (!importer.PageBySprite.TryGetValue(index, out var spritePage) || spritePage != page) continue;
+            if (!importer.RectBySprite.TryGetValue(index, out var rect)) continue;
+
+            var name = Path.GetFileNameWithoutExtension(importer.Sprites[index]);
+            if (name.Length == 0) continue;
+
+            var outputPath = Path.Combine(outputDirectory, name + ".png");
+            yield return new ExtractionItem(atlasObjectPath, name, outputPath, rect);
+        }
+    }
+
+    private static string? DeriveImporterPath(IFileProvider provider, string atlasObjectPath)
+    {
+        var slash = atlasObjectPath.LastIndexOf('/');
+        if (slash < 0) return null;
+
+        var name = atlasObjectPath[(slash + 1)..];
+        if (!name.StartsWith(AtlasPrefix, Ico)) return null;
+
+        var core = name[AtlasPrefix.Length..];
+        var suffixIndex = core.LastIndexOf(AtlasSuffix, Ico);
+        if (suffixIndex < 0) return null;
+
+        core = core[..suffixIndex].TrimEnd('0', '1', '2', '3', '4', '5', '6', '7', '8', '9');
+        if (core.Length == 0) return null;
+
+        var derived = atlasObjectPath[..slash] + "/" + ImporterPrefix + core;
+        return provider.TryGetGameFile(derived, out _) ? derived : null;
+    }
+
+    private static AtlasImporter? FindImporterForAtlas(
+        IFileProvider provider,
+        string directory,
+        IReadOnlyDictionary<string, List<string>> importersByDirectory,
+        string normalizedAtlas,
+        Dictionary<string, AtlasImporter?> importerCache)
+    {
+        if (!importersByDirectory.TryGetValue(directory, out var candidates)) return null;
+
+        foreach (var candidate in candidates)
+        {
+            var importer = LoadImporter(provider, candidate, importerCache);
+            if (importer is not null && importer.AtlasPaths.Any(p => p.Equals(normalizedAtlas, Ico)))
+            {
+                return importer;
+            }
+        }
+
+        return null;
+    }
+
+    private static AtlasImporter? LoadImporter(IFileProvider provider, string? importerPath, Dictionary<string, AtlasImporter?> cache)
+    {
+        if (importerPath is null) return null;
+        if (cache.TryGetValue(importerPath, out var cached)) return cached;
+
+        AtlasImporter? importer = null;
+        try
+        {
+            var obj = provider.LoadPackageObject(importerPath);
+            if (obj.ExportType.Equals(ImporterExportType, Ico))
+            {
+                importer = AtlasImporter.Parse(obj);
+                if (importer is null)
+                {
+                    Console.Error.WriteLine($"warning: could not read sprite layout from {importerPath}, keeping the atlas only");
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            Console.Error.WriteLine($"warning: failed to load atlas importer {importerPath}: {e.Message}");
+        }
+
+        cache[importerPath] = importer;
+        return importer;
+    }
+
+    private static string NormalizeAssetPath(string path)
+    {
+        var dot = path.LastIndexOf('.');
+        if (dot > path.LastIndexOf('/'))
+        {
+            path = path[..dot];
+        }
+
+        var markerIndex = path.LastIndexOf(AkiMarker, Ico);
+        return markerIndex >= 0 ? path[(markerIndex + AkiMarker.Length)..] : path.Trim('/');
+    }
+
+    private static SKBitmap GetAtlasBitmap(IFileProvider provider, Dictionary<string, SKBitmap> cache, string atlasObjectPath)
+    {
+        if (cache.TryGetValue(atlasObjectPath, out var cached)) return cached;
+
+        var obj = provider.LoadPackageObject(atlasObjectPath);
+        if (obj is not UTexture texture)
+        {
+            throw new InvalidDataException($"atlas {atlasObjectPath} is not a UTexture");
+        }
+
+        var decoded = texture.Decode(ETexturePlatform.DesktopMobile) ?? throw new InvalidDataException("atlas has no decodable mip");
+        var bitmap = decoded.ToSkBitmap();
+        cache[atlasObjectPath] = bitmap;
+        return bitmap;
+    }
+
+    private static SKBitmap CropSprite(SKBitmap source, AtlasSprite sprite)
+    {
+        var x = (int) MathF.Round(sprite.U0X * source.Width);
+        var y = (int) MathF.Round(sprite.U3Y * source.Height);
+        var width = sprite.Width > 0 ? sprite.Width : (int) MathF.Round((sprite.U3X - sprite.U0X) * source.Width);
+        var height = sprite.Height > 0 ? sprite.Height : (int) MathF.Round((sprite.U0Y - sprite.U3Y) * source.Height);
+
+        x = Math.Clamp(x, 0, source.Width - 1);
+        y = Math.Clamp(y, 0, source.Height - 1);
+        width = Math.Clamp(width, 1, source.Width - x);
+        height = Math.Clamp(height, 1, source.Height - y);
+
+        var destination = new SKBitmap(new SKImageInfo(width, height, source.ColorType, source.AlphaType));
+        using var canvas = new SKCanvas(destination);
+        canvas.DrawBitmap(source, new SKRect(x, y, x + width, y + height), new SKRect(0, 0, width, height));
+        return destination;
+    }
+
+    private static byte[] EncodeTexture(UTexture texture, Dictionary<string, SKBitmap> atlasBitmaps, string objectPath)
+    {
+        if (atlasBitmaps.TryGetValue(objectPath, out var cached))
+        {
+            using var image = SKImage.FromBitmap(cached);
+            using var data = image.Encode(SKEncodedImageFormat.Png, 100);
+            return data.ToArray();
+        }
+
+        var decoded = texture.Decode(ETexturePlatform.DesktopMobile) ?? throw new InvalidDataException("texture has no decodable mip");
+        return decoded.Encode(ETextureFormat.Png, false, out _);
+    }
+
+    private static void WriteFile(string path, byte[] data)
+    {
+        var directory = Path.GetDirectoryName(path);
+        if (!string.IsNullOrEmpty(directory))
+        {
+            Directory.CreateDirectory(directory);
+        }
+        File.WriteAllBytes(path, data);
     }
 
     private static void PrintUsage()
@@ -332,6 +557,7 @@ internal static class Program
               --no-keys-endpoint     Do not fetch keys; use --key or the built-in fallback key.
               --mappings <file>      Optional .usmap mappings file.
               --recursive            Scan Paks subdirectories too.
+              --no-split-atlas       Do not split UI atlases into individual sprite PNGs.
               --force                Overwrite PNG files that already exist.
               --dry-run              List what would be extracted without writing files.
               --list-dirs            Print the target directories and exit.
@@ -341,6 +567,10 @@ internal static class Program
             Targets:
               The built-in list covers the requested UI directories. In addition, every directory
               that already contains PNGs in the output root is refreshed as well.
+
+            Atlases:
+              Atlases (T_TPI_*_UIAtlas) are also split into individual sprite PNGs next to the
+              atlas image, using the sprite layout from the matching TPI_* importer asset.
             """);
     }
 
@@ -638,7 +868,128 @@ internal static class Program
         return (mainKey, dynamicKeys);
     }
 
-    private sealed record ExtractionItem(string ObjectPath, string RelativePath, string OutputPath);
+    private sealed record ExtractionItem(string ObjectPath, string RelativePath, string OutputPath, AtlasSprite? Sprite);
+
+    private sealed record AtlasSprite(float U0X, float U0Y, float U3X, float U3Y, int Width, int Height);
+
+    private sealed class AtlasImporter
+    {
+        public readonly List<string> Sprites = [];
+        public readonly List<string> AtlasPaths = [];
+        public readonly Dictionary<int, int> PageBySprite = [];
+        public readonly Dictionary<int, AtlasSprite> RectBySprite = [];
+
+        public static AtlasImporter? Parse(UObject obj)
+        {
+            string json;
+            try
+            {
+                json = JsonConvert.SerializeObject(obj);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+
+            using var document = JsonDocument.Parse(json);
+            if (!document.RootElement.TryGetProperty("Properties", out var properties))
+            {
+                return null;
+            }
+
+            var importer = new AtlasImporter();
+
+            if (properties.TryGetProperty("SoftAtlasTextures", out var atlasElement) && atlasElement.ValueKind == JsonValueKind.Array)
+            {
+                foreach (var entry in atlasElement.EnumerateArray())
+                {
+                    var path = ReadPath(entry);
+                    if (path is not null)
+                    {
+                        importer.AtlasPaths.Add(NormalizeAssetPath(path));
+                    }
+                }
+            }
+
+            if (properties.TryGetProperty("Sprites", out var spritesElement) && spritesElement.ValueKind == JsonValueKind.Array)
+            {
+                foreach (var entry in spritesElement.EnumerateArray())
+                {
+                    importer.Sprites.Add(ReadPath(entry) ?? string.Empty);
+                }
+            }
+
+            if (properties.TryGetProperty("SpriteAtlasTextureMap", out var pageElement) && pageElement.ValueKind == JsonValueKind.Array)
+            {
+                foreach (var entry in pageElement.EnumerateArray())
+                {
+                    if (TryReadIndex(entry, out var index) && entry.TryGetProperty("Value", out var value) && value.TryGetInt32(out var page))
+                    {
+                        importer.PageBySprite[index] = page;
+                    }
+                }
+            }
+
+            if (properties.TryGetProperty("SpriteInfoMap", out var infoElement) && infoElement.ValueKind == JsonValueKind.Array)
+            {
+                foreach (var entry in infoElement.EnumerateArray())
+                {
+                    if (!TryReadIndex(entry, out var index)) continue;
+                    if (!entry.TryGetProperty("Value", out var value) || value.ValueKind != JsonValueKind.Object) continue;
+
+                    var u0x = ReadFloat(value, "uv0X");
+                    var u0y = ReadFloat(value, "uv0Y");
+                    var u3x = ReadFloat(value, "uv3X");
+                    var u3y = ReadFloat(value, "uv3Y");
+                    if (float.IsNaN(u0x) || float.IsNaN(u0y) || float.IsNaN(u3x) || float.IsNaN(u3y)) continue;
+
+                    importer.RectBySprite[index] = new AtlasSprite(u0x, u0y, u3x, u3y, ReadInt(value, "width"), ReadInt(value, "height"));
+                }
+            }
+
+            return importer.Sprites.Count > 0 && importer.AtlasPaths.Count > 0 ? importer : null;
+        }
+
+        private static string? ReadPath(JsonElement element)
+        {
+            if (element.ValueKind == JsonValueKind.String)
+            {
+                return element.GetString();
+            }
+
+            if (element.ValueKind == JsonValueKind.Object && element.TryGetProperty("AssetPathName", out var path) && path.ValueKind == JsonValueKind.String)
+            {
+                return path.GetString();
+            }
+
+            return null;
+        }
+
+        private static bool TryReadIndex(JsonElement entry, out int index)
+        {
+            index = -1;
+            if (!entry.TryGetProperty("Key", out var key)) return false;
+
+            return key.ValueKind switch
+            {
+                JsonValueKind.String => int.TryParse(key.GetString(), out index),
+                JsonValueKind.Number => key.TryGetInt32(out index),
+                _ => false
+            };
+        }
+
+        private static int ReadInt(JsonElement element, string name) =>
+            element.TryGetProperty(name, out var value) && value.TryGetInt32(out var result) ? result : 0;
+
+        private static float ReadFloat(JsonElement element, string name)
+        {
+            if (element.TryGetProperty(name, out var value) && value.ValueKind == JsonValueKind.Number)
+            {
+                return value.GetSingle();
+            }
+            return float.NaN;
+        }
+    }
 
     private sealed class Options
     {
@@ -649,6 +1000,7 @@ internal static class Program
         public string? KeysFile;
         public string? Mappings;
         public bool NoKeysEndpoint;
+        public bool NoSplitAtlas;
         public bool Force;
         public bool DryRun;
         public bool ListDirs;
@@ -711,6 +1063,9 @@ internal static class Program
                     }
                     case "--no-keys-endpoint":
                         NoKeysEndpoint = true;
+                        break;
+                    case "--no-split-atlas":
+                        NoSplitAtlas = true;
                         break;
                     case "--force":
                         Force = true;
