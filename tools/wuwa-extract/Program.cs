@@ -27,7 +27,7 @@ internal static class Program
     private const string SpriteDataExportType = "LGUITexturePackerSpriteData";
     private const string TextureDataExportType = "LGUITextureData";
     private const string DefaultKeysEndpoint = "https://yarik0chka.github.io/wuwa-keys/keys.json";
-    private const string FallbackMainKey = "0x6F80948821CA338739A24D4D9F778BCAC0996B2EF2A73897A789C68AFF05174E";
+    private const string VersionFileName = "VERSION.json";
 
     private static readonly string[] DefaultDirectories =
     [
@@ -119,6 +119,10 @@ internal static class Program
 
         Console.WriteLine($"Paks:   {paksDir}");
         Console.WriteLine($"Output: {outDir}");
+
+        var gameVersion = ResolveGameVersion(paksDir);
+        Console.WriteLine($"Game:   {gameVersion ?? "unknown (game version not found)"}");
+
         Console.WriteLine($"Targets: {targets.Count} directories");
 
         var (mainKey, dynamicKeys) = LoadKeys(options);
@@ -364,6 +368,11 @@ internal static class Program
             Console.Error.WriteLine($"FAIL ... and {failed - failureLines.Count} more");
         }
 
+        if (!options.DryRun)
+        {
+            WriteVersionFile(gameVersion);
+        }
+
         Console.WriteLine($"Done in {stopwatch.Elapsed:mm\\:ss\\.ff}: {extracted} extracted ({sprites} sprites), {ignored} ignored, {skipped} skipped, {failed} failed");
         return 0;
     }
@@ -554,7 +563,7 @@ internal static class Program
               --key <0x...>          Main AES key. Defaults to the key endpoint below.
               --keys-endpoint <url>  Key endpoint (default: https://yarik0chka.github.io/wuwa-keys/keys.json).
               --keys-file <file>     Read keys.json from a local file instead of the endpoint.
-              --no-keys-endpoint     Do not fetch keys; use --key or the built-in fallback key.
+              --no-keys-endpoint     Do not fetch keys; requires --key or --keys-file.
               --mappings <file>      Optional .usmap mappings file.
               --recursive            Scan Paks subdirectories too.
               --no-split-atlas       Do not split UI atlases into individual sprite PNGs.
@@ -571,6 +580,11 @@ internal static class Program
             Atlases:
               Atlases (T_TPI_*_UIAtlas) are also split into individual sprite PNGs next to the
               atlas image, using the sprite layout from the matching TPI_* importer asset.
+
+            Version:
+              The game version the assets came from is read from the client's
+              Client/Saved/Resources/<version> folder and written to VERSION.json in the
+              repository root, so the assets can be traced back to a game release.
             """);
     }
 
@@ -581,10 +595,13 @@ internal static class Program
             return Path.GetFullPath(options.Out);
         }
 
-        return WalkForAssetsRoot(AppContext.BaseDirectory)
-               ?? WalkForAssetsRoot(Environment.CurrentDirectory)
-               ?? Environment.CurrentDirectory;
+        return ResolveRepositoryRoot() ?? Environment.CurrentDirectory;
     }
+
+    /// The wuwa-assets repository root: the directory that holds UI/UIResources.
+    private static string? ResolveRepositoryRoot() =>
+        WalkForAssetsRoot(AppContext.BaseDirectory)
+        ?? WalkForAssetsRoot(Environment.CurrentDirectory);
 
     private static string? WalkForAssetsRoot(string start)
     {
@@ -598,6 +615,72 @@ internal static class Program
             dir = dir.Parent;
         }
         return null;
+    }
+
+    /// Record the game version these assets came from in the repository root.
+    private static void WriteVersionFile(string? gameVersion)
+    {
+        var repositoryRoot = ResolveRepositoryRoot();
+        if (repositoryRoot is null)
+        {
+            Console.Error.WriteLine("warning: could not locate the repository root; VERSION.json not written.");
+        }
+        else if (gameVersion is null)
+        {
+            Console.Error.WriteLine("warning: could not determine the game version; VERSION.json not written.");
+        }
+        else
+        {
+            var path = Path.Combine(repositoryRoot, VersionFileName);
+            var json = JsonConvert.SerializeObject(new { game = gameVersion }, Formatting.Indented);
+            File.WriteAllText(path, json + Environment.NewLine);
+            Console.WriteLine($"Version: {gameVersion} -> {path}");
+        }
+    }
+
+    /// The game version the client is currently installed as, or null when the
+    /// layout does not match. Saved/ is client state, so this only resolves on a
+    /// machine that has the game installed.
+    private static string? ResolveGameVersion(string paksDirectory)
+    {
+        // The client holds its Paks two levels below the client root - as
+        // <client>/Saved/Paks or <client>/Content/Paks - and Saved/Resources,
+        // which names the installed version (3.7.0) and versions each channel
+        // inside it (Resource/3.7.15, Lang_en/3.7.6, ...), sits beside it.
+        var clientRoot = new DirectoryInfo(paksDirectory).Parent?.Parent;
+        if (clientRoot is null)
+        {
+            return null;
+        }
+
+        var resources = Path.Combine(clientRoot.FullName, "Saved", "Resources");
+        return Directory.Exists(resources) ? FindNewestGameVersion(resources) : null;
+    }
+
+    private static string? FindNewestGameVersion(string resources) =>
+        Directory.EnumerateDirectories(resources)
+            .Select(path => (Name: Path.GetFileName(path), Version: ParseGameVersion(Path.GetFileName(path))))
+            .Where(entry => entry.Version is not null)
+            .OrderByDescending(entry => entry.Version)
+            .Select(entry => entry.Name)
+            .FirstOrDefault();
+
+    /// A game version directory is three dot-separated numbers (3.7.0), so state
+    /// folders such as Video are skipped. The newest wins if several linger.
+    private static Version? ParseGameVersion(string? name)
+    {
+        if (string.IsNullOrEmpty(name))
+        {
+            return null;
+        }
+
+        var parts = name.Split('.');
+        if (parts.Length != 3 || parts.Any(part => part.Length == 0 || !part.All(char.IsAsciiDigit)))
+        {
+            return null;
+        }
+
+        return Version.TryParse(name, out var version) ? version : null;
     }
 
     private static List<string> CollectTargets(string outDir, Options options)
@@ -864,7 +947,6 @@ internal static class Program
             }
         }
 
-        mainKey ??= FallbackMainKey;
         return (mainKey, dynamicKeys);
     }
 
