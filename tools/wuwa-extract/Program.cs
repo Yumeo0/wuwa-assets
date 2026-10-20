@@ -61,7 +61,10 @@ internal static class Program
         "UI/UIResources/Common/Image/PixActivity",
         "UI/UIResources/Common/Image/Skin",
         "UI/UIResources/Common/Image/TitleDesc",
-        "UI/UIResources/UiTeam/Image"
+        "UI/UIResources/UiTeam/Image",
+        "UI/UIResources/UiWorldMap/Image",
+        "UI/UIResources/Common/Atlas/WorldMapIcon",
+        "UI/UIResources/Common/Atlas/TabIcon"
     ];
 
     private static readonly string[] AutoDetectRoots =
