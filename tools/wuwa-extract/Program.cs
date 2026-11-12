@@ -523,7 +523,7 @@ internal static class Program
 
         var destination = new SKBitmap(new SKImageInfo(width, height, source.ColorType, source.AlphaType));
         using var canvas = new SKCanvas(destination);
-        canvas.DrawBitmap(source, new SKRect(x, y, x + width, y + height), new SKRect(0, 0, width, height));
+        canvas.DrawBitmap(source, new SKRect(x, y, x + width, y + height), new SKRect(0, 0, width, height), new SKSamplingOptions(SKFilterMode.Nearest));
         return destination;
     }
 
