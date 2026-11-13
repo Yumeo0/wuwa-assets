@@ -12,9 +12,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <InternalsVisibleTo Include="wuwa-extract.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="CUE4Parse" Version="1.2.2.202611" />
     <PackageReference Include="CUE4Parse-Conversion" Version="1.2.2.202611" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="11.0.0" />
     <!-- Override the converter's exact 2.88.9 pin for PNG extraction. -->
     <PackageReference Include="SkiaSharp" Version="4.156.0" NoWarn="NU1608" />
   </ItemGroup>

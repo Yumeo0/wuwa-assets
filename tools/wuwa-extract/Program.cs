@@ -29,44 +29,6 @@ internal static class Program
     private const string DefaultKeysEndpoint = "https://yarik0chka.github.io/wuwa-keys/keys.json";
     private const string VersionFileName = "VERSION.json";
 
-    private static readonly string[] DefaultDirectories =
-    [
-        "UI/UIResources/Common/Image/Card",
-        "UI/UIResources/Common/Image/CardLong",
-        "UI/UIResources/Common/Image/CardPolygon",
-        "UI/UIResources/Common/Image/IconAttribute",
-        "UI/UIResources/Common/Image/IconC",
-        "UI/UIResources/Common/Image/IconChatEmoticon",
-        "UI/UIResources/Common/Image/IconCook",
-        "UI/UIResources/Common/Image/IconDevice",
-        "UI/UIResources/Common/Image/IconElement128",
-        "UI/UIResources/Common/Image/IconElementAttri128",
-        "UI/UIResources/Common/Image/IconElementRound",
-        "UI/UIResources/Common/Image/IconElementSuit",
-        "UI/UIResources/Common/Image/IconForceLogo",
-        "UI/UIResources/Common/Image/IconLogo",
-        "UI/UIResources/Common/Image/IconMonsterGoods160",
-        "UI/UIResources/Common/Image/IconMout",
-        "UI/UIResources/Common/Image/IconRoleHead256",
-        "UI/UIResources/Common/Image/IconRoleHeadCircle256",
-        "UI/UIResources/Common/Image/IconRolePile",
-        "UI/UIResources/Common/Image/IconRolePlayerHead256",
-        "UI/UIResources/Common/Image/IconRup",
-        "UI/UIResources/Common/Image/IconWeapon",
-        "UI/UIResources/Common/Image/IconWeaponSkin",
-        "UI/UIResources/Common/Image/IconWup",
-        "UI/UIResources/Common/Image/ImgNum",
-        "UI/UIResources/Common/Image/ImgQuality",
-        "UI/UIResources/Common/Image/Luckdraw",
-        "UI/UIResources/Common/Image/PixActivity",
-        "UI/UIResources/Common/Image/Skin",
-        "UI/UIResources/Common/Image/TitleDesc",
-        "UI/UIResources/UiTeam/Image",
-        "UI/UIResources/UiWorldMap/Image",
-        "UI/UIResources/Common/Atlas/WorldMapIcon",
-        "UI/UIResources/Common/Atlas/TabIcon"
-    ];
-
     private static readonly string[] AutoDetectRoots =
     [
         @"C:\Program Files\Wuthering Waves",
@@ -81,7 +43,7 @@ internal static class Program
         @"D:\Steam\steamapps\common\Wuthering Waves"
     ];
 
-    private static int Main(string[] args)
+    internal static int Main(string[] args)
     {
         var options = new Options();
         if (!options.Parse(args))
@@ -92,23 +54,30 @@ internal static class Program
             return 1;
         }
 
-        if (options.Help)
+        if (options.Help || (!options.HasSelection && options.Directories.Count == 0
+                            && !options.ListDirs && options.ListFiles is null && options.Inspect is null))
         {
             PrintUsage();
             return 0;
         }
 
         var outDir = ResolveOutputDirectory(options);
+        // An unfiltered directory listing shows every supported category.
+        if (options.ListDirs && !options.HasSelection && options.Directories.Count == 0) options.All = true;
         var targets = CollectTargets(outDir, options);
+        var spineTargets = options.ExtractSpine
+            ? SpineExtractor.CollectTargets(options.Directories).Where(target => !options.IsExcluded(target)).ToArray()
+            : [];
 
         if (options.ListDirs)
         {
             Console.WriteLine($"Output root: {outDir}");
-            foreach (var target in targets.OrderBy(x => x, StringComparer.OrdinalIgnoreCase))
+            foreach (var target in targets.Concat(spineTargets).Distinct(StringComparer.OrdinalIgnoreCase)
+                         .OrderBy(x => x, StringComparer.OrdinalIgnoreCase))
             {
                 Console.WriteLine("  " + target);
             }
-            Console.WriteLine($"{targets.Count} target directories");
+            Console.WriteLine($"{targets.Count} texture and {spineTargets.Length} Spine target directories");
             return 0;
         }
 
@@ -126,7 +95,7 @@ internal static class Program
         var gameVersion = ResolveGameVersion(paksDir);
         Console.WriteLine($"Game:   {gameVersion ?? "unknown (game version not found)"}");
 
-        Console.WriteLine($"Targets: {targets.Count} directories");
+        Console.WriteLine($"Targets: {targets.Count} texture and {spineTargets.Length} Spine directories");
 
         var (mainKey, dynamicKeys) = LoadKeys(options);
         if (mainKey is null)
@@ -195,6 +164,38 @@ internal static class Program
             return 1;
         }
 
+        if (options.ListFiles is { } filter)
+        {
+            foreach (var path in provider.Files.Keys.Where(path => path.Contains(filter, Ico)).Order(StringComparer.OrdinalIgnoreCase))
+            {
+                Console.WriteLine(path);
+            }
+            return 0;
+        }
+
+        if (options.Inspect is { } asset)
+        {
+            Console.WriteLine(JsonConvert.SerializeObject(provider.LoadPackage(asset).GetExports().ToArray(), Formatting.Indented));
+            return 0;
+        }
+
+        var result = 0;
+        if (options.ExtractTextures)
+        {
+            result = ExtractTextures(provider, outDir, gameVersion, targets, options);
+        }
+        if (options.ExtractSpine)
+        {
+            var spineResult = SpineExtractor.Extract(provider, outDir, gameVersion, options.Directories,
+                options.Exclude, options.Force, options.DryRun, options.Quiet);
+            if (spineResult != 0) result = spineResult;
+        }
+        return result;
+    }
+
+    private static int ExtractTextures(IFileProvider provider, string outDir, string? gameVersion,
+        IReadOnlyCollection<string> targets, Options options)
+    {
         var targetSet = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
         foreach (var target in targets)
         {
@@ -212,6 +213,7 @@ internal static class Program
 
             var relative = path[(markerIndex + AkiMarker.Length)..];
             if (relative.Length == 0) continue;
+            if (options.IsExcluded(relative)) continue;
 
             var objectPath = path[..^UassetExtension.Length];
             if (Path.GetFileName(relative).StartsWith(ImporterPrefix, Ico))
@@ -321,20 +323,24 @@ internal static class Program
                     }
                     else
                     {
-                        var obj = provider.LoadPackageObject(item.ObjectPath);
+                        // Spine packages may have no export named after the package itself.
+                        // Inspect all exports so combined/custom-root runs can skip their wrappers.
+                        var exports = provider.LoadPackage(item.ObjectPath).GetExports().ToArray();
+                        var obj = exports.FirstOrDefault(export => export.Name.Equals(Path.GetFileName(item.ObjectPath), StringComparison.Ordinal));
                         if (obj is UTexture texture)
                         {
                             WriteFile(item.OutputPath, EncodeTexture(texture, atlasBitmaps, item.ObjectPath));
                             extracted++;
                         }
-                        else if (obj.ExportType is ImporterExportType or SpriteDataExportType or TextureDataExportType)
+                        else if (obj?.ExportType is ImporterExportType or SpriteDataExportType or TextureDataExportType
+                                 || exports.Any(export => export.ExportType is "SpineAtlasAsset" or "SpineSkeletonDataAsset"))
                         {
                             ignored++;
                             continue;
                         }
                         else
                         {
-                            throw new InvalidDataException($"export is {obj.ExportType}, not a UTexture");
+                            throw new InvalidDataException($"export is {obj?.ExportType ?? "missing"}, not a UTexture");
                         }
                     }
 
@@ -371,13 +377,13 @@ internal static class Program
             Console.Error.WriteLine($"FAIL ... and {failed - failureLines.Count} more");
         }
 
-        if (!options.DryRun)
+        if (failed == 0)
         {
-            WriteVersionFile(gameVersion);
+            WriteVersionFile(gameVersion, outDir);
         }
 
         Console.WriteLine($"Done in {stopwatch.Elapsed:mm\\:ss\\.ff}: {extracted} extracted ({sprites} sprites), {ignored} ignored, {skipped} skipped, {failed} failed");
-        return 0;
+        return failed == 0 ? 0 : 1;
     }
 
     private static bool IsAtlasAsset(string fileName) =>
@@ -553,15 +559,27 @@ internal static class Program
     private static void PrintUsage()
     {
         Console.WriteLine("""
-            wuwa-extract - extract Wuthering Waves UI textures into the wuwa-assets repository.
+            wuwa-extract - extract Wuthering Waves UI textures and Spine animations.
 
             Usage:
-              dotnet run --project tools/wuwa-extract -- [options]
+              dotnet run --project tools/wuwa-extract -- <asset types> [options]
+
+            Asset types (combine any of these):
+              --all                 Extract every supported texture category and character Spine bundle.
+              --textures            Extract all texture categories, without Spine bundles.
+            """);
+        foreach (var (flag, category) in AssetTypes.Textures)
+        {
+            Console.WriteLine($"  {flag,-22}{category.Description}");
+        }
+        Console.WriteLine("""
+              --spine               Character Spine skeletons, atlases and referenced texture pages.
 
             Options:
               --paks <dir>           Paks directory or game/client root. Defaults to WUWA_PAKS or a common install path.
               --out <dir>            Output root. Defaults to the wuwa-assets repository root.
-              --dir <relative>       Extra directory to extract, relative to Client/Content/Aki/ (repeatable).
+              --dir <relative>       Limit selected formats to these directories instead of preset roots (repeatable).
+                                    Relative to Client/Content/Aki/. Without an asset type, selects textures.
               --exclude <relative>   Directory to skip (repeatable).
               --key <0x...>          Main AES key. Defaults to the key endpoint below.
               --keys-endpoint <url>  Key endpoint (default: https://yarik0chka.github.io/wuwa-keys/keys.json).
@@ -570,24 +588,42 @@ internal static class Program
               --mappings <file>      Optional .usmap mappings file.
               --recursive            Scan Paks subdirectories too.
               --no-split-atlas       Do not split UI atlases into individual sprite PNGs.
-              --force                Overwrite PNG files that already exist.
+              --force                Overwrite asset files that already exist.
               --dry-run              List what would be extracted without writing files.
               --list-dirs            Print the target directories and exit.
+              --list-files <text>    List mounted archive paths containing text and exit.
+              --inspect <asset>      Print all exports in an Unreal package as JSON and exit.
               --quiet                Only print warnings and the summary.
               -h, --help             Show this help.
 
             Targets:
-              The built-in list covers the requested UI directories. In addition, every directory
-              that already contains PNGs in the output root is refreshed as well.
+              No asset selection prints this help; it does not mount archives or extract files.
+              --all and --textures also refresh existing PNG directories in the output root.
+              Individual categories extract only their own directories. --dir replaces preset roots.
+              --all covers the supported UI artwork and character Spine bundles listed above.
+
+            Examples:
+              dotnet run --project tools/wuwa-extract -- --characters --weapons --quiet
+              dotnet run --project tools/wuwa-extract -- --maps --spine --dry-run
+              dotnet run --project tools/wuwa-extract -- --all --quiet
 
             Atlases:
               Atlases (T_TPI_*_UIAtlas) are also split into individual sprite PNGs next to the
               atlas image, using the sprite layout from the matching TPI_* importer asset.
 
+            Spine:
+              --spine exports Common/Spine (portraits, full-body art, skins and chibis) and
+              UiLuckdraw/Spine/Character (gacha art). Original .skel/.json and .atlas payloads
+              are preserved, with PNG pages next to the atlas under their original names.
+              SPINE.json lists each skeleton, its atlas, pages, runtime version and source.
+              It also records characterId, characterIds (including shared Rover variants),
+              category and characterReferences, resolved from the mounted game's configs/prefabs.
+              Unknown owners have characterId: null and an empty characterIds array.
+
             Version:
               The game version the assets came from is read from the client's
-              Client/Saved/Resources/<version> folder and written to VERSION.json in the
-              repository root, so the assets can be traced back to a game release.
+              Client/Saved/Resources/<version> folder. Texture extraction writes VERSION.json
+              in the output root; Spine extraction records its version in SPINE.json.
             """);
     }
 
@@ -620,21 +656,17 @@ internal static class Program
         return null;
     }
 
-    /// Record the game version these assets came from in the repository root.
-    private static void WriteVersionFile(string? gameVersion)
+    /// Record the game version these assets came from in the selected output root.
+    private static void WriteVersionFile(string? gameVersion, string outputRoot)
     {
-        var repositoryRoot = ResolveRepositoryRoot();
-        if (repositoryRoot is null)
-        {
-            Console.Error.WriteLine("warning: could not locate the repository root; VERSION.json not written.");
-        }
-        else if (gameVersion is null)
+        if (gameVersion is null)
         {
             Console.Error.WriteLine("warning: could not determine the game version; VERSION.json not written.");
         }
         else
         {
-            var path = Path.Combine(repositoryRoot, VersionFileName);
+            Directory.CreateDirectory(outputRoot);
+            var path = Path.Combine(outputRoot, VersionFileName);
             var json = JsonConvert.SerializeObject(new { game = gameVersion }, Formatting.Indented);
             File.WriteAllText(path, json + Environment.NewLine);
             Console.WriteLine($"Version: {gameVersion} -> {path}");
@@ -686,10 +718,15 @@ internal static class Program
         return Version.TryParse(name, out var version) ? version : null;
     }
 
-    private static List<string> CollectTargets(string outDir, Options options)
+    internal static List<string> CollectTargets(string outDir, Options options)
     {
+        if (!options.ExtractTextures) return [];
         var targets = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-        foreach (var directory in DefaultDirectories.Concat(options.Directories))
+        var directories = options.Directories.Count > 0
+            ? options.Directories
+            : AssetTypes.Textures.Where(category => options.All || options.Textures
+                || options.TextureCategories.Contains(category.Key)).SelectMany(category => category.Value.Directories);
+        foreach (var directory in directories)
         {
             var normalized = NormalizeTarget(directory);
             if (normalized.Length > 0)
@@ -698,24 +735,17 @@ internal static class Program
             }
         }
 
-        foreach (var directory in DiscoverExistingDirectories(outDir))
+        // Only a full texture refresh rediscovers existing artwork. A category selection
+        // must remain independent of unrelated files left in the output directory.
+        if ((options.All || options.Textures) && options.Directories.Count == 0)
         {
-            targets.TryAdd(directory, directory);
-        }
-
-        foreach (var exclude in options.Exclude)
-        {
-            var normalized = NormalizeTarget(exclude);
-            if (normalized.Length == 0) continue;
-            foreach (var key in targets.Keys
-                         .Where(k => k.Equals(normalized, Ico) || k.StartsWith(normalized + "/", Ico))
-                         .ToList())
+            foreach (var directory in DiscoverExistingDirectories(outDir))
             {
-                targets.Remove(key);
+                targets.TryAdd(directory, directory);
             }
         }
 
-        return targets.Values.ToList();
+        return targets.Values.Where(target => !options.IsExcluded(target)).ToList();
     }
 
     private static IEnumerable<string> DiscoverExistingDirectories(string outDir)
@@ -737,6 +767,8 @@ internal static class Program
             bool hasPng;
             try
             {
+                // Spine pages belong to a model bundle and are refreshed by --spine.
+                if (Directory.EnumerateFiles(dir, "*.atlas", SearchOption.TopDirectoryOnly).Any()) continue;
                 hasPng = Directory.EnumerateFiles(dir, "*.png", SearchOption.TopDirectoryOnly).Any();
             }
             catch (Exception)
@@ -758,6 +790,7 @@ internal static class Program
     private static readonly string[] TargetPrefixes =
     [
         "Client/Content/Aki/",
+        "Game/Aki/",
         "Aki/",
         "../../../Client/Content/Aki/"
     ];
@@ -1076,7 +1109,7 @@ internal static class Program
         }
     }
 
-    private sealed class Options
+    internal sealed class Options
     {
         public string? Paks;
         public string? Out;
@@ -1084,8 +1117,13 @@ internal static class Program
         public string? KeysEndpoint = DefaultKeysEndpoint;
         public string? KeysFile;
         public string? Mappings;
+        public string? ListFiles;
+        public string? Inspect;
         public bool NoKeysEndpoint;
         public bool NoSplitAtlas;
+        public bool Spine;
+        public bool Textures;
+        public bool All;
         public bool Force;
         public bool DryRun;
         public bool ListDirs;
@@ -1094,6 +1132,17 @@ internal static class Program
         public bool Help;
         public readonly List<string> Directories = [];
         public readonly List<string> Exclude = [];
+        public readonly HashSet<string> TextureCategories = new(StringComparer.Ordinal);
+
+        public bool ExtractSpine => Spine || All;
+        public bool ExtractTextures => All || Textures || TextureCategories.Count > 0
+            || (Directories.Count > 0 && !ExtractSpine);
+        public bool HasSelection => All || Textures || Spine || TextureCategories.Count > 0;
+
+        private string[]? normalizedExcludes;
+        public bool IsExcluded(string path) =>
+            (normalizedExcludes ??= Exclude.Select(NormalizeTarget).Where(path => path.Length > 0).ToArray())
+            .Any(excluded => path.Equals(excluded, Ico) || path.StartsWith(excluded + "/", Ico));
 
         public string? Error;
 
@@ -1103,10 +1152,15 @@ internal static class Program
             for (var i = 0; i < args.Length; i++)
             {
                 var argument = args[i];
+                if (AssetTypes.Textures.ContainsKey(argument))
+                {
+                    TextureCategories.Add(argument);
+                    continue;
+                }
 
                 string? Next(string name)
                 {
-                    if (i + 1 >= args.Length)
+                    if (i + 1 >= args.Length || args[i + 1].StartsWith("--", StringComparison.Ordinal))
                     {
                         Error = $"error: missing value for {name}";
                         return null;
@@ -1134,6 +1188,12 @@ internal static class Program
                     case "--mappings":
                         Mappings = Next(argument);
                         break;
+                    case "--list-files":
+                        ListFiles = Next(argument);
+                        break;
+                    case "--inspect":
+                        Inspect = Next(argument);
+                        break;
                     case "--dir":
                     {
                         var value = Next(argument);
@@ -1151,6 +1211,15 @@ internal static class Program
                         break;
                     case "--no-split-atlas":
                         NoSplitAtlas = true;
+                        break;
+                    case "--spine":
+                        Spine = true;
+                        break;
+                    case "--textures":
+                        Textures = true;
+                        break;
+                    case "--all":
+                        All = true;
                         break;
                     case "--force":
                         Force = true;

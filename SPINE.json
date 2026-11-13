@@ -1,0 +1,4012 @@
+{
+  "game": "3.8.0",
+  "models": [
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/Anke/a_anke_1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Anke/a_anke_0.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Anke/a_anke_0.uasset",
+      "export": "a_anke_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Anke/a_anke_0.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Anke/Textures/a_anke_0.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/AnkeS/a_anke_0s_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/AnkeS/a_anke_0s.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/AnkeS/a_anke_0s.uasset",
+      "export": "a_anke_0s_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/AnkeS/a_anke_0s.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/AnkeS/Textures/a_anke_0s.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/Changli/a_changli_1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Changli/a_changli_0.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Changli/a_changli_0.uasset",
+      "export": "a_changli_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Changli/a_changli_0.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Changli/Textures/a_changli_0.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/ChangliS/a_changli_0s_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/ChangliS/a_changli_0s.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/ChangliS/a_changli_0s.uasset",
+      "export": "a_changli_0s_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/ChangliS/a_changli_0s.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/ChangliS/Textures/a_changli_0s.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/Chixia/a_chixia_1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Chixia/a_chixia_0.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Chixia/a_chixia_0.uasset",
+      "export": "a_chixia_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Chixia/a_chixia_0.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Chixia/Textures/a_chixia_0.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/ChixiaS/a_chixia_0s_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/ChixiaS/a_chixia_0s.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/ChixiaS/a_chixia_0s.uasset",
+      "export": "a_chixia_0s_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/ChixiaS/a_chixia_0s.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/ChixiaS/Textures/a_chixia_0s.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/Fuluoluo/a_fuluoluo_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/Fuluoluo/a_fuluoluo_0.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Fuluoluo/a_fuluoluo_0.uasset",
+      "export": "a_fuluoluo_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Fuluoluo/a_fuluoluo_0.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Fuluoluo/Textures/a_fuluoluo_0.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/Jianxin/a_jianxin_1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Jianxin/a_jianxin_0.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Jianxin/a_jianxin_0.uasset",
+      "export": "a_jianxin_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Jianxin/a_jianxin_0.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Jianxin/Textures/a_jianxin_0.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/JianxinS/a_jianxin_0s_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/JianxinS/a_jianxin_0s.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/JianxinS/a_jianxin_0s.uasset",
+      "export": "a_jianxin_0s_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/JianxinS/a_jianxin_0s.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/JianxinS/Textures/a_jianxin_0s.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/Jinxi/a_jinxi_1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Jinxi/a_jinxi_0.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Jinxi/a_jinxi_0.uasset",
+      "export": "a_jinxi_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Jinxi/a_jinxi_0.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Jinxi/Textures/a_jinxi_0.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/JinxiS/a_jinxi_0s_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/JinxiS/a_jinxi_0s.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/JinxiS/a_jinxi_0s.uasset",
+      "export": "a_jinxi_0s_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/JinxiS/a_jinxi_0s.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/JinxiS/Textures/a_jinxi_0s.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/Jiyan/a_jiyan_1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Jiyan/a_jiyan_0.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Jiyan/a_jiyan_0.uasset",
+      "export": "a_jiyan_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Jiyan/a_jiyan_0.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Jiyan/Textures/a_jiyan_0.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/JiyanS/a_jiyan_0s_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/JiyanS/a_jiyan_0s.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/JiyanS/a_jiyan_0s.uasset",
+      "export": "a_jiyan_0s_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/JiyanS/a_jiyan_0s.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/JiyanS/Textures/a_jiyan_0s.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/Lingyang/a_lingyang_1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Lingyang/a_lingyang_0.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Lingyang/a_lingyang_0.uasset",
+      "export": "a_lingyang_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Lingyang/a_lingyang_0.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Lingyang/Textures/a_lingyang_0.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/LingyangS/a_lingyang_0s_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/LingyangS/a_lingyang_0s.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/LingyangS/a_lingyang_0s.uasset",
+      "export": "a_lingyang_0s_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/LingyangS/a_lingyang_0s.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/LingyangS/Textures/a_lingyang_0s.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/Nanzhu/a_nanzhu_1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Nanzhu/a_nanzhu_0.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Nanzhu/a_nanzhu_0.uasset",
+      "export": "a_nanzhu_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Nanzhu/a_nanzhu_0.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Nanzhu/Textures/a_nanzhu_0.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/NanzhuS/a_nanzhu_0s_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/NanzhuS/a_nanzhu_0s.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/NanzhuS/a_nanzhu_0s.uasset",
+      "export": "a_nanzhu_0s_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/NanzhuS/a_nanzhu_0s.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/NanzhuS/Textures/a_nanzhu_0s.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/Nvzhu/a_nvzhu_1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Nvzhu/a_nvzhu_0.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Nvzhu/a_nvzhu_0.uasset",
+      "export": "a_nvzhu_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Nvzhu/a_nvzhu_0.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Nvzhu/Textures/a_nvzhu_0.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/NvzhuS/a_nvzhu_0s_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/NvzhuS/a_nvzhu_0s.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/NvzhuS/a_nvzhu_0s.uasset",
+      "export": "a_nvzhu_0s_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/NvzhuS/a_nvzhu_0s.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/NvzhuS/Textures/a_nvzhu_0s.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Abu/Portraits_Abu.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Abu/Portraits_Abu.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Abu/Portraits_Abu.uasset",
+      "export": "Portraits_Abu-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Abu/Portraits_Abu.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Abu/Textures/Portraits_Abu.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": 1210,
+      "characterIds": [
+        1210
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Aimisi/Portraits_Aimisi.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Aimisi/Portraits_Aimisi.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Aimisi/Portraits_Aimisi.uasset",
+      "export": "Portraits_Aimisi-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Aimisi/Portraits_Aimisi.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Aimisi/Textures/Portraits_Aimisi.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1210,
+          "source": "db_activity.roletrialroleconfig[1210].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1210,
+          "source": "db_role.roleskin[81001210].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1203,
+      "characterIds": [
+        1203
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Anke/Portraits_Anke.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Anke/Portraits_Anke.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Anke/Portraits_Anke.uasset",
+      "export": "Portraits_Anke-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Anke/Portraits_Anke.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Anke/Textures/Portraits_Anke.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1203,
+          "source": "db_role.roleskin[81001203].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1306,
+      "characterIds": [
+        1306
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Aogusita/Portraits_Aogusita.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Aogusita/Portraits_Aogusita.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Aogusita/Portraits_Aogusita.uasset",
+      "export": "Portraits_Aogusita-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Aogusita/Portraits_Aogusita.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Aogusita/Textures/Portraits_Aogusita.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Aogusita/Portraits_Aogusita_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Aogusita/Textures/Portraits_Aogusita_2.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Aogusita/Portraits_Aogusita_3.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Aogusita/Textures/Portraits_Aogusita_3.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1306,
+          "source": "db_activity.roletrialroleconfig[1306].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1306,
+          "source": "db_role.roleskin[81001306].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1103,
+      "characterIds": [
+        1103
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Baizhi/Portraits_Baizhi.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Baizhi/Portraits_Baizhi.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Baizhi/Portraits_Baizhi.uasset",
+      "export": "Portraits_Baizhi-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Baizhi/Portraits_Baizhi.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Baizhi/Textures/Portraits_Baizhi.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1103,
+          "source": "db_activity.roletrialroleconfig[1103].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1103,
+          "source": "db_role.roleskin[81001103].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1206,
+      "characterIds": [
+        1206
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Bulante/Portraits_Bulante.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Bulante/Portraits_Bulante.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Bulante/Portraits_Bulante.uasset",
+      "export": "Portraits_Bulante-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Bulante/Portraits_Bulante.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Bulante/Textures/Portraits_Bulante.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1206,
+          "source": "db_activity.roletrialroleconfig[1206].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1206,
+          "source": "db_role.roleskin[81001206].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1307,
+      "characterIds": [
+        1307
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Buling/Portraits_Buling.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Buling/Portraits_Buling.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Buling/Portraits_Buling.uasset",
+      "export": "Portraits_Buling-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Buling/Portraits_Buling.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Buling/Textures/Portraits_Buling.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1307,
+          "source": "db_activity.roletrialroleconfig[1307].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1307,
+          "source": "db_role.roleskin[81001307].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1205,
+      "characterIds": [
+        1205
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Changli/Portraits_Changli.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Changli/Portraits_Changli.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Changli/Portraits_Changli.uasset",
+      "export": "Portraits_Changli-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Changli/Portraits_Changli.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Changli/Textures/Portraits_Changli.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1205,
+          "source": "db_activity.roletrialroleconfig[1205].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1205,
+          "source": "db_role.roleskin[81001205].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1205,
+      "characterIds": [
+        1205
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Changli1/Portraits_Changli_Skin1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Changli1/Portraits_Changli_Skin1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Changli1/Portraits_Changli_Skin1.uasset",
+      "export": "Portraits_Changli_Skin1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Changli1/Portraits_Changli_Skin1.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Changli1/Textures/Portraits_Changli_Skin1.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Changli1/Portraits_Changli_Skin1_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Changli1/Textures/Portraits_Changli_Skin1_2.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Changli1/Portraits_Changli_Skin1_3.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Changli1/Textures/Portraits_Changli_Skin1_3.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1205,
+          "source": "db_role.roleskin[81011205].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1202,
+      "characterIds": [
+        1202
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Chixia/Portraits_ChiXia.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Chixia/Portraits_ChiXia.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Chixia/Portraits_ChiXia.uasset",
+      "export": "Portraits_ChiXia-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Chixia/Portraits_ChiXia.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Chixia/Textures/Portraits_ChiXia.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1202,
+          "source": "db_activity.roletrialroleconfig[1202].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1202,
+          "source": "db_role.roleskin[81001202].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1603,
+      "characterIds": [
+        1603
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Chun/Portraits_Chun.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Chun/Portraits_Chun.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Chun/Portraits_Chun.uasset",
+      "export": "Portraits_Chun-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Chun/Portraits_Chun.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Chun/Textures/Portraits_Chun.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1603,
+          "source": "db_activity.roletrialroleconfig[1603].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1603,
+          "source": "db_role.roleskin[81001603].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1211,
+      "characterIds": [
+        1211
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Daniya/Portraits_Daniya.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Daniya/Portraits_Daniya.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Daniya/Portraits_Daniya.uasset",
+      "export": "Portraits_Daniya-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Daniya/Portraits_Daniya.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Daniya/Textures/Portraits_Daniya.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Daniya/Portraits_Daniya_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Daniya/Textures/Portraits_DaNiYa_2.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1211,
+          "source": "db_activity.roletrialroleconfig[1211].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1211,
+          "source": "db_role.roleskin[81001211].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1602,
+      "characterIds": [
+        1602
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Danjin/Portraits_Danjin.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Danjin/Portraits_Danjin.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Danjin/Portraits_Danjin.uasset",
+      "export": "Portraits_Danjin-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Danjin/Portraits_Danjin.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Danjin/Textures/Portraits_Danjin.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1602,
+          "source": "db_activity.roletrialroleconfig[1602].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1602,
+          "source": "db_role.roleskin[81001602].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1504,
+      "characterIds": [
+        1504
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Dengdeng/Portraits_Dengdeng.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Dengdeng/Portraits_Dengdeng.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Dengdeng/Portraits_Dengdeng.uasset",
+      "export": "Portraits_Dengdeng-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Dengdeng/Portraits_Dengdeng.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Dengdeng/Textures/Portraits_Dengdeng.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1504,
+          "source": "db_activity.roletrialroleconfig[1504].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1504,
+          "source": "db_role.roleskin[81001504].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1506,
+      "characterIds": [
+        1506
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Feibi/Portraits_Feibi.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Feibi/Portraits_Feibi.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Feibi/Portraits_Feibi.uasset",
+      "export": "Portraits_Feibi-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Feibi/Portraits_Feibi.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Feibi/Textures/Portraits_Feibi.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1506,
+          "source": "db_activity.roletrialroleconfig[1506].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1506,
+          "source": "db_role.roleskin[81001506].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1108,
+      "characterIds": [
+        1108
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Feixue/Portraits_Feixue.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Feixue/Portraits_Feixue.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Feixue/Portraits_Feixue.uasset",
+      "export": "Portraits_Feixue-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Feixue/Portraits_Feixue.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Feixue/Textures/Portraits_Feixue.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Feixue/Portraits_Feixue_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Feixue/Textures/Portraits_Feixue_2.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1108,
+          "source": "db_activity.roletrialroleconfig[1108].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1108,
+          "source": "db_role.roleskin[81001108].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1108,
+      "characterIds": [
+        1108
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Feixue1/Portraits_Feixue_Skin1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Feixue1/Portraits_Feixue_Skin1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Feixue1/Portraits_Feixue_Skin1.uasset",
+      "export": "Portraits_Feixue_Skin1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Feixue1/Portraits_Feixue_Skin1.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Feixue1/Textures/Portraits_Feixue_Skin1.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Feixue1/Portraits_Feixue_Skin1_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Feixue1/Textures/Portraits_Feixue_Skin1_2.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1108,
+          "source": "db_role.roleskin[81011108].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": null,
+      "characterIds": [
+        1310,
+        1408,
+        1502,
+        1604
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Female/Portraits_Female.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Female/Portraits_Female.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Female/Portraits_Female.uasset",
+      "export": "Portraits_Female-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Female/Portraits_Female.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Female/Textures/Portraits_Female.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Female/Portraits_Female_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Female/Textures/Portraits_Female_2.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Female/Portraits_Female_3.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Female/Textures/Portraits_Female_3.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1310,
+          "source": "db_role.roleskin[81001310].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1408,
+          "source": "db_role.roleskin[81001408].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1502,
+          "source": "db_role.roleskin[81001502].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1604,
+          "source": "db_role.roleskin[81001604].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": null,
+      "characterIds": [
+        1310,
+        1408,
+        1502,
+        1604
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Female1/Portraits_Female_Skin1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Female1/Portraits_Female_Skin1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Female1/Portraits_Female_Skin1.uasset",
+      "export": "Portraits_Female_Skin1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Female1/Portraits_Female_Skin1.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Female1/Textures/Portraits_Female_Skin1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1310,
+          "source": "db_role.roleskin[81011310].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1408,
+          "source": "db_role.roleskin[81011408].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1502,
+          "source": "db_role.roleskin[81011502].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1604,
+          "source": "db_role.roleskin[81011604].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1608,
+      "characterIds": [
+        1608
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Fuluoluo/Portraits_Fuluoluo.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Fuluoluo/Portraits_Fuluoluo.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Fuluoluo/Portraits_Fuluoluo.uasset",
+      "export": "Portraits_Fuluoluo-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Fuluoluo/Portraits_Fuluoluo.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Fuluoluo/Textures/Portraits_Fuluoluo.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1608,
+          "source": "db_activity.roletrialroleconfig[1608].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1608,
+          "source": "db_role.roleskin[81001608].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1208,
+      "characterIds": [
+        1208
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Jiabeilina/Portraits_Jiabeilina.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Jiabeilina/Portraits_Jiabeilina.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Jiabeilina/Portraits_Jiabeilina.uasset",
+      "export": "Portraits_Jiabeilina-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Jiabeilina/Portraits_Jiabeilina.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Jiabeilina/Textures/Portraits_Jiabeilina.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1208,
+          "source": "db_activity.roletrialroleconfig[1208].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1208,
+          "source": "db_role.roleskin[81001208].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1405,
+      "characterIds": [
+        1405
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Jianxin/Portraits_Jianxin.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Jianxin/Portraits_Jianxin.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Jianxin/Portraits_Jianxin.uasset",
+      "export": "Portraits_Jianxin-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Jianxin/Portraits_Jianxin.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Jianxin/Textures/Portraits_Jianxin.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1405,
+          "source": "db_role.roleskin[81001405].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1212,
+      "characterIds": [
+        1212
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Jingran/Portraits_Jingran.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Jingran/Portraits_Jingran.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Jingran/Portraits_Jingran.uasset",
+      "export": "Portraits_Jingran-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Jingran/Portraits_Jingran.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Jingran/Textures/Portraits_Jingran.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Jingran/Portraits_Jingran_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Jingran/Textures/Portraits_Jingran_2.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1212,
+          "source": "db_role.roleskin[81001212].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1304,
+      "characterIds": [
+        1304
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Jinxi/Portraits_Jinxi.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Jinxi/Portraits_Jinxi.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Jinxi/Portraits_Jinxi.uasset",
+      "export": "Portraits_Jinxi-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Jinxi/Portraits_Jinxi.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Jinxi/Textures/Portraits_Jinxi.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1304,
+          "source": "db_activity.roletrialroleconfig[1304].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1304,
+          "source": "db_role.roleskin[81001304].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1304,
+      "characterIds": [
+        1304
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Jinxi1/Portraits_Jinxi_Skin1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Jinxi1/Portraits_Jinxi_Skin1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Jinxi1/Portraits_Jinxi_Skin1.uasset",
+      "export": "Portraits_Jinxi_Skin1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Jinxi1/Portraits_Jinxi_Skin1.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Jinxi1/Textures/Portraits_Jinxi_Skin1.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Jinxi1/Portraits_Jinxi_Skin1_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Jinxi1/Textures/Portraits_Jinxi_Skin1_2.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Jinxi1/Portraits_Jinxi_Skin1_3.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Jinxi1/Textures/Portraits_Jinxi_Skin1_3.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1304,
+          "source": "db_role.roleskin[81011304].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1404,
+      "characterIds": [
+        1404
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Jiyan/Portraits_Jiyan.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Jiyan/Portraits_Jiyan.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Jiyan/Portraits_Jiyan.uasset",
+      "export": "Portraits_Jiyan-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Jiyan/Portraits_Jiyan.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Jiyan/Textures/Portraits_Jiyan.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1404,
+          "source": "db_activity.roletrialroleconfig[1404].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1404,
+          "source": "db_role.roleskin[81001404].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1301,
+      "characterIds": [
+        1301
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Kakaluo/Portraits_Kakaluo.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Kakaluo/Portraits_Kakaluo.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Kakaluo/Portraits_Kakaluo.uasset",
+      "export": "Portraits_Kakaluo-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Kakaluo/Portraits_Kakaluo.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Kakaluo/Textures/Portraits_Kakaluo.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1301,
+          "source": "db_role.roleskin[81001301].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1607,
+      "characterIds": [
+        1607
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Kanteleila/Portraits_Kanteleila.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Kanteleila/Portraits_Kanteleila.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Kanteleila/Portraits_Kanteleila.uasset",
+      "export": "Portraits_Kanteleila-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Kanteleila/Portraits_Kanteleila.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Kanteleila/Textures/Portraits_Kanteleila.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Kanteleila/Portraits_Kanteleila_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Kanteleila/Textures/Portraits_Kanteleila_2.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Kanteleila/Portraits_Kanteleila_3.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Kanteleila/Textures/Portraits_Kanteleila_3.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1607,
+          "source": "db_activity.roletrialroleconfig[1607].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1607,
+          "source": "db_role.roleskin[81001607].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1409,
+      "characterIds": [
+        1409
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Katixiya/Portraits_Katixiya.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Katixiya/Portraits_Katixiya.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Katixiya/Portraits_Katixiya.uasset",
+      "export": "Portraits_Katixiya-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Katixiya/Portraits_Katixiya.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Katixiya/Textures/Portraits_Katixiya.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1409,
+          "source": "db_activity.roletrialroleconfig[1409].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1409,
+          "source": "db_role.roleskin[81001409].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1107,
+      "characterIds": [
+        1107
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Kelaita/Portraits_Kelaita.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Kelaita/Portraits_Kelaita.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Kelaita/Portraits_Kelaita.uasset",
+      "export": "Portraits_Kelaita-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Kelaita/Portraits_Kelaita.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Kelaita/Textures/Portraits_Kelaita.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1107,
+          "source": "db_activity.roletrialroleconfig[1107].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1107,
+          "source": "db_role.roleskin[81001107].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1107,
+      "characterIds": [
+        1107
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Kelaita1/Portraits_Kelaita_Skin1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Kelaita1/Portraits_Kelaita_Skin1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Kelaita1/Portraits_Kelaita_Skin1.uasset",
+      "export": "Portraits_Kelaita_Skin1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Kelaita1/Portraits_Kelaita_Skin1.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Kelaita1/Textures/Portraits_Kelaita_Skin1.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Kelaita1/Portraits_Kelaita_Skin1_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Kelaita1/Textures/Portraits_Kelaita_Skin1_2.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1107,
+          "source": "db_role.roleskin[81011107].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1512,
+      "characterIds": [
+        1512
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Lili/Portraits_Lili.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Lili/Portraits_Lili.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Lili/Portraits_Lili.uasset",
+      "export": "Portraits_Lili-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Lili/Portraits_Lili.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Lili/Textures/Portraits_Lili.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Lili/Portraits_Lili_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Lili/Textures/Portraits_Lili_2.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1512,
+          "source": "db_role.roleskin[81001512].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1104,
+      "characterIds": [
+        1104
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Lingyang/Portraits_Lingyang.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Lingyang/Portraits_Lingyang.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Lingyang/Portraits_Lingyang.uasset",
+      "export": "Portraits_Lingyang-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Lingyang/Portraits_Lingyang.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Lingyang/Textures/Portraits_Lingyang.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1104,
+          "source": "db_role.roleskin[81001104].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1509,
+      "characterIds": [
+        1509
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Linnai/Portraits_Linnai.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Linnai/Portraits_Linnai.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Linnai/Portraits_Linnai.uasset",
+      "export": "Portraits_Linnai-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Linnai/Portraits_Linnai.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Linnai/Textures/Portraits_Linnai.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Linnai/Portraits_Linnai_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Linnai/Textures/Portraits_Linnai_2.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Linnai/Portraits_Linnai_3.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Linnai/Textures/Portraits_Linnai_3.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1509,
+          "source": "db_activity.roletrialroleconfig[1509].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1509,
+          "source": "db_role.roleskin[81001509].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1509,
+      "characterIds": [
+        1509
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Linnai1/Portraits_Linnai_Skin1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Linnai1/Portraits_Linnai_Skin1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Linnai1/Portraits_Linnai_Skin1.uasset",
+      "export": "Portraits_Linnai_Skin1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Linnai1/Portraits_Linnai_Skin1.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Linnai1/Textures/Portraits_Linnai_Skin1.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Linnai1/Portraits_Linnai_Skin1_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Linnai1/Textures/Portraits_Linnai_Skin1_2.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1509,
+          "source": "db_role.roleskin[81011509].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1511,
+      "characterIds": [
+        1511
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Lucy/Portraits_Lucy.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Lucy/Portraits_Lucy.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Lucy/Portraits_Lucy.uasset",
+      "export": "Portraits_Lucy-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Lucy/Portraits_Lucy.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Lucy/Textures/Portraits_Lucy.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1511,
+          "source": "db_role.roleskin[81001511].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1510,
+      "characterIds": [
+        1510
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Luhesi/Portraits_Luhesi.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Luhesi/Portraits_Luhesi.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Luhesi/Portraits_Luhesi.uasset",
+      "export": "Portraits_Luhesi-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Luhesi/Portraits_Luhesi.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Luhesi/Textures/Portraits_Luhesi.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1510,
+          "source": "db_activity.roletrialroleconfig[1510].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1510,
+          "source": "db_role.roleskin[81001510].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1606,
+      "characterIds": [
+        1606
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Luokeke/Portraits_Luokeke.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Luokeke/Portraits_Luokeke.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Luokeke/Portraits_Luokeke.uasset",
+      "export": "Portraits_Luokeke-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Luokeke/Portraits_Luokeke.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Luokeke/Textures/Portraits_Luokeke.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1606,
+          "source": "db_activity.roletrialroleconfig[1606].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1606,
+          "source": "db_role.roleskin[81001606].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1109,
+      "characterIds": [
+        1109
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_LuoSeLa/Portraits_LuoSeLa.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_LuoSeLa/Portraits_LuoSeLa.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_LuoSeLa/Portraits_LuoSeLa.uasset",
+      "export": "Portraits_LuoSeLa-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_LuoSeLa/Portraits_LuoSeLa.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_LuoSeLa/Textures/Portraits_LuoSeLa.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1109,
+          "source": "db_role.roleskin[81001109].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1207,
+      "characterIds": [
+        1207
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Lupa/Portraits_Lupa.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Lupa/Portraits_Lupa.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Lupa/Portraits_Lupa.uasset",
+      "export": "Portraits_Lupa-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Lupa/Portraits_Lupa.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Lupa/Textures/Portraits_Lupa.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1207,
+          "source": "db_activity.roletrialroleconfig[1207].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1207,
+          "source": "db_role.roleskin[81001207].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": null,
+      "characterIds": [
+        1309,
+        1406,
+        1501,
+        1605
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Male/Portraits_Male.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Male/Portraits_Male.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Male/Portraits_Male.uasset",
+      "export": "Portraits_Male-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Male/Portraits_Male.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Male/Textures/Portraits_Male.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1309,
+          "source": "db_role.roleskin[81001309].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1406,
+          "source": "db_role.roleskin[81001406].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1501,
+          "source": "db_role.roleskin[81001501].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1605,
+          "source": "db_role.roleskin[81001605].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": null,
+      "characterIds": [
+        1309,
+        1406,
+        1501,
+        1605
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Male1/PortraitsMale_Skin1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Male1/PortraitsMale_Skin1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Male1/PortraitsMale_Skin1.uasset",
+      "export": "PortraitsMale_Skin1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Male1/PortraitsMale_Skin1.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Male1/Textures/PortraitsMale_Skin1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1309,
+          "source": "db_role.roleskin[81011309].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1406,
+          "source": "db_role.roleskin[81011406].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1501,
+          "source": "db_role.roleskin[81011501].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1605,
+          "source": "db_role.roleskin[81011605].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1209,
+      "characterIds": [
+        1209
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Moning/Portraits_Moning.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Moning/Portraits_Moning.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Moning/Portraits_Moning.uasset",
+      "export": "Portraits_Moning-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Moning/Portraits_Moning.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Moning/Textures/Portraits_Moning.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1209,
+          "source": "db_activity.roletrialroleconfig[1209].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1209,
+          "source": "db_role.roleskin[81001209].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1209,
+      "characterIds": [
+        1209
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Moning1/Portraits_Moning_Skin1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Moning1/Portraits_Moning_Skin1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Moning1/Portraits_Moning_Skin1.uasset",
+      "export": "Portraits_Moning_Skin1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Moning1/Portraits_Moning_Skin1.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Moning1/Textures/Portraits_Moning_Skin1.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Moning1/Portraits_Moning_Skin1_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Moning1/Textures/Portraits_Moning_Skin1_2.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1209,
+          "source": "db_role.roleskin[81011209].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1204,
+      "characterIds": [
+        1204
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Motefei/Portraits_Motefei.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Motefei/Portraits_Motefei.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Motefei/Portraits_Motefei.uasset",
+      "export": "Portraits_Motefei-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Motefei/Portraits_Motefei.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Motefei/Textures/Portraits_Motefei.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1204,
+          "source": "db_activity.roletrialroleconfig[1204].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1204,
+          "source": "db_role.roleskin[81001204].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1508,
+      "characterIds": [
+        1508
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Qianxiao/Portraits_Qianxiao.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Qianxiao/Portraits_Qianxiao.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Qianxiao/Portraits_Qianxiao.uasset",
+      "export": "Portraits_Qianxiao-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Qianxiao/Portraits_Qianxiao.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Qianxiao/Textures/Portraits_Qianxiao.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1508,
+          "source": "db_activity.roletrialroleconfig[1508].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1508,
+          "source": "db_role.roleskin[81001508].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1508,
+      "characterIds": [
+        1508
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Qianxiao1/Portraits_Qianxiao_Skin1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Qianxiao1/Portraits_Qianxiao_Skin1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Qianxiao1/Portraits_Qianxiao_Skin1.uasset",
+      "export": "Portraits_Qianxiao_Skin1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Qianxiao1/Portraits_Qianxiao_Skin1.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Qianxiao1/Textures/Portraits_Qianxiao_Skin1.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Qianxiao1/Portraits_Qianxiao_Skin1_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Qianxiao1/Textures/Portraits_Qianxiao_Skin1_2.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1508,
+          "source": "db_role.roleskin[81011508].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1413,
+      "characterIds": [
+        1413
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Qingxiao/Portraits_Qingxiao.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Qingxiao/Portraits_Qingxiao.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Qingxiao/Portraits_Qingxiao.uasset",
+      "export": "Portraits_Qingxiao-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Qingxiao/Portraits_Qingxiao.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Qingxiao/Textures/Portraits_Qingxiao.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Qingxiao/Portraits_Qingxiao_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Qingxiao/Textures/Portraits_Qingxiao_2.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1413,
+          "source": "db_role.roleskin[81001413].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1403,
+      "characterIds": [
+        1403
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Qiushui/Portraits_Qiushui.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Qiushui/Portraits_Qiushui.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Qiushui/Portraits_Qiushui.uasset",
+      "export": "Portraits_Qiushui-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Qiushui/Portraits_Qiushui.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Qiushui/Textures/Portraits_Qiushui.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1403,
+          "source": "db_activity.roletrialroleconfig[1403].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1403,
+          "source": "db_role.roleskin[81001403].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1411,
+      "characterIds": [
+        1411
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Qiuyuan/Portraits_Qiuyuan.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Qiuyuan/Portraits_Qiuyuan.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Qiuyuan/Portraits_Qiuyuan.uasset",
+      "export": "Portraits_Qiuyuan-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Qiuyuan/Portraits_Qiuyuan.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Qiuyuan/Textures/Portraits_Qiuyuan.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1411,
+          "source": "db_activity.roletrialroleconfig[1411].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1411,
+          "source": "db_role.roleskin[81001411].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1308,
+      "characterIds": [
+        1308
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Rebecca/Portraits_Rebecca.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Rebecca/Portraits_Rebecca.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Rebecca/Portraits_Rebecca.uasset",
+      "export": "Portraits_Rebecca-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Rebecca/Portraits_Rebecca.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Rebecca/Textures/Portraits_Rebecca.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1308,
+          "source": "db_role.roleskin[81001308].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1102,
+      "characterIds": [
+        1102
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Sanhua/Portraits_Sanhua.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Sanhua/Portraits_Sanhua.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Sanhua/Portraits_Sanhua.uasset",
+      "export": "Portraits_Sanhua-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Sanhua/Portraits_Sanhua.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Sanhua/Textures/Portraits_Sanhua.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1102,
+          "source": "db_activity.roletrialroleconfig[1102].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1102,
+          "source": "db_role.roleskin[81001102].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1102,
+      "characterIds": [
+        1102
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Sanhua1/Portraits_Sanhua_Skin1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Sanhua1/Portraits_Sanhua_Skin1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Sanhua1/Portraits_Sanhua_Skin1.uasset",
+      "export": "Portraits_Sanhua_Skin1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Sanhua1/Portraits_Sanhua_Skin1.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Sanhua1/Textures/Portraits_Sanhua_Skin1.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Sanhua1/Portraits_Sanhua_Skin1_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Sanhua1/Textures/Portraits_Sanhua_Skin1_2.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Sanhua1/Portraits_Sanhua_Skin1_3.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Sanhua1/Textures/Portraits_Sanhua_Skin1_3.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1102,
+          "source": "db_role.roleskin[81011102].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1505,
+      "characterIds": [
+        1505
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Shouanren/Portraits_Shouanren.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Shouanren/Portraits_Shouanren.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Shouanren/Portraits_Shouanren.uasset",
+      "export": "Portraits_Shouanren-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Shouanren/Portraits_Shouanren.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Shouanren/Textures/Portraits_Shouanren.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1505,
+          "source": "db_activity.roletrialroleconfig[1505].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1505,
+          "source": "db_role.roleskin[81001505].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1110,
+      "characterIds": [
+        1110
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Suisui/Portraits_Suisui.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Suisui/Portraits_Suisui.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Suisui/Portraits_Suisui.uasset",
+      "export": "Portraits_Suisui-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Suisui/Portraits_Suisui.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Suisui/Textures/Portraits_Suisui.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Suisui/Portraits_Suisui_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Suisui/Textures/Portraits_Suisui_2.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1110,
+          "source": "db_role.roleskin[81001110].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1312,
+      "characterIds": [
+        1312
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Suoming/Portraits_Suoming.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Suoming/Portraits_Suoming.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Suoming/Portraits_Suoming.uasset",
+      "export": "Portraits_Suoming-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Suoming/Portraits_Suoming.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Suoming/Textures/Portraits_Suoming.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Suoming/Portraits_Suoming_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Suoming/Textures/Portraits_Suoming_2.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1312,
+          "source": "db_role.roleskin[81001312].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1601,
+      "characterIds": [
+        1601
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Taoqi/Portraits_Taoqi.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Taoqi/Portraits_Taoqi.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Taoqi/Portraits_Taoqi.uasset",
+      "export": "Portraits_Taoqi-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Taoqi/Portraits_Taoqi.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Taoqi/Textures/Portraits_Taoqi.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1601,
+          "source": "db_activity.roletrialroleconfig[1601].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1601,
+          "source": "db_role.roleskin[81001601].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1503,
+      "characterIds": [
+        1503
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Weilinai/Portraits_Weilinai.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Weilinai/Portraits_Weilinai.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Weilinai/Portraits_Weilinai.uasset",
+      "export": "Portraits_Weilinai-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Weilinai/Portraits_Weilinai.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Weilinai/Textures/Portraits_Weilinai.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1503,
+          "source": "db_role.roleskin[81001503].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1407,
+      "characterIds": [
+        1407
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Xiakong/Portraits_Xiakong.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Xiakong/Portraits_Xiakong.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Xiakong/Portraits_Xiakong.uasset",
+      "export": "Portraits_Xiakong-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Xiakong/Portraits_Xiakong.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Xiakong/Textures/Portraits_Xiakong.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Xiakong/Portraits_Xiakong_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Xiakong/Textures/Portraits_Xiakong_2.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1407,
+          "source": "db_activity.roletrialroleconfig[1407].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1407,
+          "source": "db_role.roleskin[81001407].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1305,
+      "characterIds": [
+        1305
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Xiangliyao/Portraits_Xiangliyao.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Xiangliyao/Portraits_Xiangliyao.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Xiangliyao/Portraits_Xiangliyao.uasset",
+      "export": "Portraits_Xiangliyao-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Xiangliyao/Portraits_Xiangliyao.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Xiangliyao/Textures/Portraits_Xiangliyao.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Xiangliyao/Portraits_Xiangliyao_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Xiangliyao/Textures/Portraits_Xiangliyao_2.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Xiangliyao/Portraits_Xiangliyao_3.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Xiangliyao/Textures/Portraits_Xiangliyao_3.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Xiangliyao/Portraits_Xiangliyao_4.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Xiangliyao/Textures/Portraits_Xiangliyao_4.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1305,
+          "source": "db_activity.roletrialroleconfig[1305].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1305,
+          "source": "db_role.roleskin[81001305].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1412,
+      "characterIds": [
+        1412
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Xigelika/Portraits_Xigelika.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Xigelika/Portraits_Xigelika.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Xigelika/Portraits_Xigelika.uasset",
+      "export": "Portraits_Xigelika-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Xigelika/Portraits_Xigelika.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Xigelika/Textures/Portraits_Xigelika.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1412,
+          "source": "db_activity.roletrialroleconfig[1412].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1412,
+          "source": "db_role.roleskin[81001412].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1311,
+      "characterIds": [
+        1311
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Xin/Portraits_Xin.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Xin/Portraits_Xin.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Xin/Portraits_Xin.uasset",
+      "export": "Portraits_Xin-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Xin/Portraits_Xin.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Xin/Textures/Portraits_Xin.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Xin/Portraits_Xin_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Xin/Textures/Portraits_Xin_2.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1311,
+          "source": "db_role.roleskin[81001311].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1610,
+      "characterIds": [
+        1610
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Xuanling/Portraits_Xuanling.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Xuanling/Portraits_Xuanling.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Xuanling/Portraits_Xuanling.uasset",
+      "export": "Portraits_Xuanling-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Xuanling/Portraits_Xuanling.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Xuanling/Textures/Portraits_Xuanling.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Xuanling/Portraits_Xuanling_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Xuanling/Textures/Portraits_Xuanling_2.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1610,
+          "source": "db_role.roleskin[81001610].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1402,
+      "characterIds": [
+        1402
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Yangyang/Portraits_Yangyang.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Yangyang/Portraits_Yangyang.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Yangyang/Portraits_Yangyang.uasset",
+      "export": "Portraits_Yangyang-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Yangyang/Portraits_Yangyang.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Yangyang/Textures/Portraits_Yangyang.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1402,
+          "source": "db_activity.roletrialroleconfig[1402].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1402,
+          "source": "db_role.roleskin[81001402].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1302,
+      "characterIds": [
+        1302
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Yinlin/Portraits_Yinlin.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Yinlin/Portraits_Yinlin.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Yinlin/Portraits_Yinlin.uasset",
+      "export": "Portraits_Yinlin-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Yinlin/Portraits_Yinlin.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Yinlin/Textures/Portraits_Yinlin.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1302,
+          "source": "db_activity.roletrialroleconfig[1302].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1302,
+          "source": "db_role.roleskin[81001302].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1106,
+      "characterIds": [
+        1106
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Youhu/Portraits_Youhu.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Youhu/Portraits_Youhu.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Youhu/Portraits_Youhu.uasset",
+      "export": "Portraits_Youhu-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Youhu/Portraits_Youhu.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Youhu/Textures/Portraits_Youhu.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1106,
+          "source": "db_activity.roletrialroleconfig[1106].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1106,
+          "source": "db_role.roleskin[81001106].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1410,
+      "characterIds": [
+        1410
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Younuo/Portraits_Younuo.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Younuo/Portraits_Younuo.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Younuo/Portraits_Younuo.uasset",
+      "export": "Portraits_Younuo-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Younuo/Portraits_Younuo.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Younuo/Textures/Portraits_Younuo.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Younuo/Portraits_Younuo_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Younuo/Textures/Portraits_Younuo_2.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1410,
+          "source": "db_activity.roletrialroleconfig[1410].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1410,
+          "source": "db_role.roleskin[81001410].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1303,
+      "characterIds": [
+        1303
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Yuanwu/Portraits_Yuanwu.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Yuanwu/Portraits_Yuanwu.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Yuanwu/Portraits_Yuanwu.uasset",
+      "export": "Portraits_Yuanwu-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Yuanwu/Portraits_Yuanwu.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Yuanwu/Textures/Portraits_Yuanwu.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1303,
+          "source": "db_activity.roletrialroleconfig[1303].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1303,
+          "source": "db_role.roleskin[81001303].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1507,
+      "characterIds": [
+        1507
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Zanni/Portraits_Zanni.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Zanni/Portraits_Zanni.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Zanni/Portraits_Zanni.uasset",
+      "export": "Portraits_Zanni-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Zanni/Portraits_Zanni.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Zanni/Textures/Portraits_Zanni.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Zanni/Portraits_Zanni_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Zanni/Textures/Portraits_Zanni_2.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Zanni/Portraits_Zanni_3.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Zanni/Textures/Portraits_Zanni_3.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1507,
+          "source": "db_activity.roletrialroleconfig[1507].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1507,
+          "source": "db_role.roleskin[81001507].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1507,
+      "characterIds": [
+        1507
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Zanni1/Portraits_Zanni_Skin1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Zanni1/Portraits_Zanni_Skin1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Zanni1/Portraits_Zanni_Skin1.uasset",
+      "export": "Portraits_Zanni_Skin1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Zanni1/Portraits_Zanni_Skin1.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Zanni1/Textures/Portraits_Zanni_Skin1.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Zanni1/Portraits_Zanni_Skin1_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Zanni1/Textures/Portraits_Zanni_Skin1_2.1"
+        },
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Zanni1/Portraits_Zanni_Skin1_3.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Zanni1/Textures/Portraits_Zanni_Skin1_3.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1507,
+          "source": "db_role.roleskin[81011507].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1105,
+      "characterIds": [
+        1105
+      ],
+      "category": "portrait",
+      "skeleton": "UI/UIResources/Common/Spine/Portraits/Portraits_Zhezhi/Portraits_Zhezhi.skel",
+      "atlas": "UI/UIResources/Common/Spine/Portraits/Portraits_Zhezhi/Portraits_Zhezhi.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Zhezhi/Portraits_Zhezhi.uasset",
+      "export": "Portraits_Zhezhi-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Portraits/Portraits_Zhezhi/Portraits_Zhezhi.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Portraits/Portraits_Zhezhi/Textures/Portraits_Zhezhi.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1105,
+          "source": "db_activity.roletrialroleconfig[1105].FormationSpineSkeletonData"
+        },
+        {
+          "characterId": 1105,
+          "source": "db_role.roleskin[81001105].FormationSpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "chibi",
+      "skeleton": "UI/UIResources/Common/Spine/QSpine/AbuS/a_abu_1s_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/QSpine/AbuS/a_abu_1s.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/QSpine/AbuS/a_abu_1s.uasset",
+      "export": "a_abu_1s_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/QSpine/AbuS/a_abu_1s.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/QSpine/AbuS/Textures/a_abu_1s.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "chibi",
+      "skeleton": "UI/UIResources/Common/Spine/QSpine/BulanteS/a_bulante_1s_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/QSpine/BulanteS/a_bulante_1s.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/QSpine/BulanteS/a_bulante_1s.uasset",
+      "export": "a_bulante_1s_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/QSpine/BulanteS/a_bulante_1s.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/QSpine/BulanteS/Textures/a_bulante_1s.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "chibi",
+      "skeleton": "UI/UIResources/Common/Spine/QSpine/ChangliS/a_changli_1s_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/QSpine/ChangliS/a_changli_1s.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/QSpine/ChangliS/a_changli_1s.uasset",
+      "export": "a_changli_1s_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/QSpine/ChangliS/a_changli_1s.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/QSpine/ChangliS/Textures/a_changli_1s.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "chibi",
+      "skeleton": "UI/UIResources/Common/Spine/QSpine/JinxiS/a_jinxi_1s_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/QSpine/JinxiS/a_jinxi_1s.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/QSpine/JinxiS/a_jinxi_1s.uasset",
+      "export": "a_jinxi_1s_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/QSpine/JinxiS/a_jinxi_1s.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/QSpine/JinxiS/Textures/a_jinxi_1s.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "chibi",
+      "skeleton": "UI/UIResources/Common/Spine/QSpine/KelaitaS/a_kelaita_1s_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/QSpine/KelaitaS/a_kelaita_1s.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/QSpine/KelaitaS/a_kelaita_1s.uasset",
+      "export": "a_kelaita_1s_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/QSpine/KelaitaS/a_kelaita_1s.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/QSpine/KelaitaS/Textures/a_kelaita_1s.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "chibi",
+      "skeleton": "UI/UIResources/Common/Spine/QSpine/LuokekeS/a_luokeke_1s_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/QSpine/LuokekeS/a_luokeke_1s.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/QSpine/LuokekeS/a_luokeke_1s.uasset",
+      "export": "a_luokeke_1s_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/QSpine/LuokekeS/a_luokeke_1s.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/QSpine/LuokekeS/Textures/a_luokeke_1s.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "chibi",
+      "skeleton": "UI/UIResources/Common/Spine/QSpine/SanhuaS/a_sanhua_1s_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/QSpine/SanhuaS/a_sanhua_1s.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/QSpine/SanhuaS/a_sanhua_1s.uasset",
+      "export": "a_sanhua_1s_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/QSpine/SanhuaS/a_sanhua_1s.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/QSpine/SanhuaS/Textures/a_sanhua_1s.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/RogueNanzhu/Avatar_HeroL/Avatar_HeroL.skel",
+      "atlas": "UI/UIResources/Common/Spine/RogueNanzhu/Avatar_HeroL/Avatar_HeroL.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/RogueNanzhu/Avatar_HeroL/Avatar_HeroL.uasset",
+      "export": "Avatar_HeroL-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/RogueNanzhu/Avatar_HeroL/Avatar_HeroL.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/RogueNanzhu/Avatar_HeroL/Textures/Avatar_HeroL.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/RogueNanzhu/Avatar_HeroR/Avatar_HeroR.skel",
+      "atlas": "UI/UIResources/Common/Spine/RogueNanzhu/Avatar_HeroR/Avatar_HeroR.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/RogueNanzhu/Avatar_HeroR/Avatar_HeroR.uasset",
+      "export": "Avatar_HeroR-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/RogueNanzhu/Avatar_HeroR/Avatar_HeroR.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/RogueNanzhu/Avatar_HeroR/Textures/Avatar_HeroR.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/RogueNuzhu/Avatar_HeroineL/Avatar_HeroineL.skel",
+      "atlas": "UI/UIResources/Common/Spine/RogueNuzhu/Avatar_HeroineL/Avatar_HeroineL.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/RogueNuzhu/Avatar_HeroineL/Avatar_HeroineL.uasset",
+      "export": "Avatar_HeroineL-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/RogueNuzhu/Avatar_HeroineL/Avatar_HeroineL.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/RogueNuzhu/Avatar_HeroineL/Textures/Avatar_HeroineL.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/RogueNuzhu/Avatar_HeroineR/Avatar_HeroineR.skel",
+      "atlas": "UI/UIResources/Common/Spine/RogueNuzhu/Avatar_HeroineR/Avatar_HeroineR.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/RogueNuzhu/Avatar_HeroineR/Avatar_HeroineR.uasset",
+      "export": "Avatar_HeroineR-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/RogueNuzhu/Avatar_HeroineR/Avatar_HeroineR.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/RogueNuzhu/Avatar_HeroineR/Textures/Avatar_HeroineR.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/Sanhua/a_sanhua_1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Sanhua/a_sanhua_0.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Sanhua/a_sanhua_0.uasset",
+      "export": "a_sanhua_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Sanhua/a_sanhua_0.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Sanhua/Textures/a_sanhua_0.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/SanhuaS/a_sanhua_0s_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/SanhuaS/a_sanhua_0s.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/SanhuaS/a_sanhua_0s.uasset",
+      "export": "a_sanhua_0s_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/SanhuaS/a_sanhua_0s.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/SanhuaS/Textures/a_sanhua_0s.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": 1205,
+      "characterIds": [
+        1205
+      ],
+      "category": "skin",
+      "skeleton": "UI/UIResources/Common/Spine/Skin/Changli1/c_changli_2.skel",
+      "atlas": "UI/UIResources/Common/Spine/Skin/Changli1/c_changli_2.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Skin/Changli1/c_changli_2.uasset",
+      "export": "c_changli_2-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Skin/Changli1/c_changli_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Skin/Changli1/Textures/c_changli_2.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1205,
+          "source": "db_role.roleskin[81011205].SpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1108,
+      "characterIds": [
+        1108
+      ],
+      "category": "skin",
+      "skeleton": "UI/UIResources/Common/Spine/Skin/Feixue1/c_Feixue_Skin1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Skin/Feixue1/c_Feixue_Skin1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Skin/Feixue1/c_Feixue_Skin1.uasset",
+      "export": "c_Feixue_Skin1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Skin/Feixue1/c_Feixue_Skin1.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Skin/Feixue1/Textures/c_Feixue_Skin1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1108,
+          "source": "db_role.roleskin[81011108].SpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": null,
+      "characterIds": [
+        1310,
+        1408,
+        1502,
+        1604
+      ],
+      "category": "skin",
+      "skeleton": "UI/UIResources/Common/Spine/Skin/Female1/c_Female_Skin1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Skin/Female1/c_Female_Skin1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Skin/Female1/c_Female_Skin1.uasset",
+      "export": "c_Female_Skin1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Skin/Female1/c_Female_Skin1.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Skin/Female1/Textures/c_Female_Skin1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1310,
+          "source": "db_role.roleskin[81011310].SpineSkeletonData"
+        },
+        {
+          "characterId": 1408,
+          "source": "db_role.roleskin[81011408].SpineSkeletonData"
+        },
+        {
+          "characterId": 1502,
+          "source": "db_role.roleskin[81011502].SpineSkeletonData"
+        },
+        {
+          "characterId": 1604,
+          "source": "db_role.roleskin[81011604].SpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1304,
+      "characterIds": [
+        1304
+      ],
+      "category": "skin",
+      "skeleton": "UI/UIResources/Common/Spine/Skin/Jinxi/c_jinxi_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/Skin/Jinxi/c_jinxi_2.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Skin/Jinxi/c_jinxi_2.uasset",
+      "export": "c_jinxi_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Skin/Jinxi/c_jinxi_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Skin/Jinxi/Textures/c_jinxi_2.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1304,
+          "source": "db_role.roleskin[81011304].SpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1107,
+      "characterIds": [
+        1107
+      ],
+      "category": "skin",
+      "skeleton": "UI/UIResources/Common/Spine/Skin/Kelaita1/c_kelaita_2.skel",
+      "atlas": "UI/UIResources/Common/Spine/Skin/Kelaita1/c_kelaita_2.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Skin/Kelaita1/c_kelaita_2.uasset",
+      "export": "c_kelaita_2-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Skin/Kelaita1/c_kelaita_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Skin/Kelaita1/Textures/c_kelaita_2.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1107,
+          "source": "db_role.roleskin[81011107].SpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1509,
+      "characterIds": [
+        1509
+      ],
+      "category": "skin",
+      "skeleton": "UI/UIResources/Common/Spine/Skin/Linnai1/c_linnai_Skin1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Skin/Linnai1/c_linnai_Skin1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Skin/Linnai1/c_linnai_Skin1.uasset",
+      "export": "c_linnai_Skin1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Skin/Linnai1/c_linnai_Skin1.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Skin/Linnai1/Textures/c_linnai_Skin1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1509,
+          "source": "db_role.roleskin[81011509].SpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": null,
+      "characterIds": [
+        1309,
+        1406,
+        1501,
+        1605
+      ],
+      "category": "skin",
+      "skeleton": "UI/UIResources/Common/Spine/Skin/Male1/c_Male_Skin1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Skin/Male1/c_Male_Skin1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Skin/Male1/c_Male_Skin1.uasset",
+      "export": "c_Male_Skin1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Skin/Male1/c_Male_Skin1.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Skin/Male1/Textures/c_Male_Skin1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1309,
+          "source": "db_role.roleskin[81011309].SpineSkeletonData"
+        },
+        {
+          "characterId": 1406,
+          "source": "db_role.roleskin[81011406].SpineSkeletonData"
+        },
+        {
+          "characterId": 1501,
+          "source": "db_role.roleskin[81011501].SpineSkeletonData"
+        },
+        {
+          "characterId": 1605,
+          "source": "db_role.roleskin[81011605].SpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1209,
+      "characterIds": [
+        1209
+      ],
+      "category": "skin",
+      "skeleton": "UI/UIResources/Common/Spine/Skin/Moning1/c_moning_Skin1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Skin/Moning1/c_moning_Skin1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Skin/Moning1/c_moning_Skin1.uasset",
+      "export": "c_moning_Skin1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Skin/Moning1/c_moning_Skin1.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Skin/Moning1/Textures/c_moning_Skin1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1209,
+          "source": "db_role.roleskin[81011209].SpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1508,
+      "characterIds": [
+        1508
+      ],
+      "category": "skin",
+      "skeleton": "UI/UIResources/Common/Spine/Skin/Qianxiao1/c_qianxiao_Skin1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Skin/Qianxiao1/c_qianxiao_Skin1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Skin/Qianxiao1/c_qianxiao_Skin1.uasset",
+      "export": "c_qianxiao_Skin1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Skin/Qianxiao1/c_qianxiao_Skin1.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Skin/Qianxiao1/Textures/c_qianxiao_Skin1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1508,
+          "source": "db_role.roleskin[81011508].SpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1102,
+      "characterIds": [
+        1102
+      ],
+      "category": "skin",
+      "skeleton": "UI/UIResources/Common/Spine/Skin/Sanhua/c_sanhua_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/Skin/Sanhua/c_sanhua_2.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Skin/Sanhua/c_sanhua_2.uasset",
+      "export": "c_sanhua_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Skin/Sanhua/c_sanhua_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Skin/Sanhua/Textures/c_sanhua_2.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1102,
+          "source": "db_role.roleskin[81011102].SpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": 1507,
+      "characterIds": [
+        1507
+      ],
+      "category": "skin",
+      "skeleton": "UI/UIResources/Common/Spine/Skin/Zanni/c_zanni_2.skel",
+      "atlas": "UI/UIResources/Common/Spine/Skin/Zanni/c_zanni_2.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Skin/Zanni/c_zanni_2.uasset",
+      "export": "c_zanni_2-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Skin/Zanni/c_zanni_2.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Skin/Zanni/Textures/c_zanni_2.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1507,
+          "source": "db_role.roleskin[81011507].SpineSkeletonData"
+        }
+      ]
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/Xiangliyao/a_xiangliyao_1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Xiangliyao/a_xiangliyao_0.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Xiangliyao/a_xiangliyao_0.uasset",
+      "export": "a_xiangliyao_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Xiangliyao/a_xiangliyao_0.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Xiangliyao/Textures/a_xiangliyao_0.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/XiangliyaoS/a_xiangliyao_0s_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/XiangliyaoS/a_xiangliyao_0s.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/XiangliyaoS/a_xiangliyao_0s.uasset",
+      "export": "a_xiangliyao_0s_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/XiangliyaoS/a_xiangliyao_0s.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/XiangliyaoS/Textures/a_xiangliyao_0s.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/Yangyang/a_yangyang_1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Yangyang/a_yangyang_0.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Yangyang/a_yangyang_0.uasset",
+      "export": "a_yangyang_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Yangyang/a_yangyang_0.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Yangyang/Textures/a_yangyang_0.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/YangyangS/a_yangyang_0s_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/YangyangS/a_yangyang_0s.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/YangyangS/a_yangyang_0s.uasset",
+      "export": "a_yangyang_0s_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/YangyangS/a_yangyang_0s.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/YangyangS/Textures/a_yangyang_0s.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/Yinlin/a_yinlin_1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Yinlin/a_yinlin_0.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Yinlin/a_yinlin_0.uasset",
+      "export": "a_yinlin_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Yinlin/a_yinlin_0.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Yinlin/Textures/a_yinlin_0.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/YinlinS/a_yinlin_0s_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/YinlinS/a_yinlin_0s.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/YinlinS/a_yinlin_0s.uasset",
+      "export": "a_yinlin_0s_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/YinlinS/a_yinlin_0s.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/YinlinS/Textures/a_yinlin_0s.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/Zhezhi/a_zhezhi_1.skel",
+      "atlas": "UI/UIResources/Common/Spine/Zhezhi/a_zhezhi_0.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Zhezhi/a_zhezhi_0.uasset",
+      "export": "a_zhezhi_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/Zhezhi/a_zhezhi_0.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/Zhezhi/Textures/a_zhezhi_0.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": null,
+      "characterIds": [],
+      "category": "full-body",
+      "skeleton": "UI/UIResources/Common/Spine/ZhezhiS/a_zhezhi_0s_0.skel",
+      "atlas": "UI/UIResources/Common/Spine/ZhezhiS/a_zhezhi_0s.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/Common/Spine/ZhezhiS/a_zhezhi_0s.uasset",
+      "export": "a_zhezhi_0s_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/Common/Spine/ZhezhiS/a_zhezhi_0s.png",
+          "source": "Client/Content/Aki/UI/UIResources/Common/Spine/ZhezhiS/Textures/a_zhezhi_0s.1"
+        }
+      ],
+      "characterReferences": []
+    },
+    {
+      "characterId": 1210,
+      "characterIds": [
+        1210
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_AiMiSi_1/c_aimisi_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_AiMiSi_1/c_aimisi_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_AiMiSi_1/c_aimisi_1.uasset",
+      "export": "c_aimisi_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_AiMiSi_1/c_aimisi_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_AiMiSi_1/Textures/c_aimisi_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1210,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_AiMiSi -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleAiMiSi.UiItem_LuckdrawRoleAiMiSi"
+        }
+      ]
+    },
+    {
+      "characterId": 1306,
+      "characterIds": [
+        1306
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_AoGuSiTa_01/c_augusta_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_AoGuSiTa_01/c_augusta_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_AoGuSiTa_01/c_augusta_1.uasset",
+      "export": "c_augusta_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_AoGuSiTa_01/c_augusta_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_AoGuSiTa_01/Textures/c_augusta_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1306,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_Aogusita -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleAogusita.UiItem_LuckdrawRoleAogusita"
+        }
+      ]
+    },
+    {
+      "characterId": 1206,
+      "characterIds": [
+        1206
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_BuLanTe_01/c_bulante_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_BuLanTe_01/c_bulante_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_BuLanTe_01/c_bulante_1.uasset",
+      "export": "c_bulante_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_BuLanTe_01/c_bulante_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_BuLanTe_01/Textures/c_bulante_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1206,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_BuLanTe -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleBulante.UiItem_LuckdrawRoleBulante"
+        }
+      ]
+    },
+    {
+      "characterId": 1205,
+      "characterIds": [
+        1205
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_ChangLi_01/c_changli_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_ChangLi_01/c_changli_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_ChangLi_01/c_changli_1.uasset",
+      "export": "c_changli_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_ChangLi_01/c_changli_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_ChangLi_01/Textures/c_changli_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1205,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_ChangLi -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleChangli.UiItem_LuckdrawRoleChangli"
+        }
+      ]
+    },
+    {
+      "characterId": 1603,
+      "characterIds": [
+        1603
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_Chun_01/c_chun_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_Chun_01/c_chun_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_Chun_01/c_chun_1.uasset",
+      "export": "c_chun_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_Chun_01/c_chun_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_Chun_01/Textures/c_chun_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1603,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_Chun -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleChun.UiItem_LuckdrawRoleChun"
+        }
+      ]
+    },
+    {
+      "characterId": 1211,
+      "characterIds": [
+        1211
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_DaNiYa_01/c_daniya_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_DaNiYa_01/c_daniya_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_DaNiYa_01/c_daniya_1.uasset",
+      "export": "c_daniya_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_DaNiYa_01/c_daniya_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_DaNiYa_01/Textures/c_daniya_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1211,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_DaNiYa -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleDaNiYa.UiItem_LuckdrawRoleDaNiYa"
+        }
+      ]
+    },
+    {
+      "characterId": 1506,
+      "characterIds": [
+        1506
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_FeiBi_01/c_feibi_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_FeiBi_01/c_feibi_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_FeiBi_01/c_feibi_1.uasset",
+      "export": "c_feibi_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_FeiBi_01/c_feibi_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_FeiBi_01/Textures/c_feibi_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1506,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_FeiBi -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleFeibi.UiItem_LuckdrawRoleFeibi"
+        }
+      ]
+    },
+    {
+      "characterId": 1108,
+      "characterIds": [
+        1108
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_FeiXue_01/c_feixue_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_FeiXue_01/c_feixue_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_FeiXue_01/c_feixue_1.uasset",
+      "export": "c_feixue_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_FeiXue_01/c_feixue_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_FeiXue_01/Textures/c_feixue_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1108,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_FeiXue -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleFeiXue.UiItem_LuckdrawRoleFeiXue"
+        }
+      ]
+    },
+    {
+      "characterId": 1608,
+      "characterIds": [
+        1608
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_FuLuoLuo_01/c_fuluoluo_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_FuLuoLuo_01/c_fuluoluo_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_FuLuoLuo_01/c_fuluoluo_1.uasset",
+      "export": "c_fuluoluo_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_FuLuoLuo_01/c_fuluoluo_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_FuLuoLuo_01/Textures/c_fuluoluo_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1608,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_Fuluoluo -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleFuluoluo.UiItem_LuckdrawRoleFuluoluo"
+        }
+      ]
+    },
+    {
+      "characterId": 1208,
+      "characterIds": [
+        1208
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_JiaBeiLiNa_1/c_jiabeilina_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_JiaBeiLiNa_1/c_jiabeilina_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_JiaBeiLiNa_1/c_jiabeilina_1.uasset",
+      "export": "c_jiabeilina_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_JiaBeiLiNa_1/c_jiabeilina_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_JiaBeiLiNa_1/Textures/c_jiabeilina_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1208,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_JiaBeiLiNa -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleJiaBeiLiNa.UiItem_LuckdrawRoleJiaBeiLiNa"
+        }
+      ]
+    },
+    {
+      "characterId": 1212,
+      "characterIds": [
+        1212
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_JingRan_01/c_jingran_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_JingRan_01/c_jingran_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_JingRan_01/c_jingran_1.uasset",
+      "export": "c_jingran_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_JingRan_01/c_jingran_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_JingRan_01/Textures/c_jingran_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1212,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_JingRan -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleJingRan.UiItem_LuckdrawRoleJingRan"
+        }
+      ]
+    },
+    {
+      "characterId": 1304,
+      "characterIds": [
+        1304
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_JinXi_1/c_jinxi_0.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_JinXi_1/c_jinxi_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_JinXi_1/c_jinxi_1.uasset",
+      "export": "c_jinxi_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_JinXi_1/c_jinxi_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_JinXi_1/Textures/c_jinxi_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1304,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_JinXi -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleJinxi.UiItem_LuckdrawRoleJinxi"
+        }
+      ]
+    },
+    {
+      "characterId": 1404,
+      "characterIds": [
+        1404
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_JiYan_01/c_jiyan_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_JiYan_01/c_jiyan_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_JiYan_01/c_jiyan_1.uasset",
+      "export": "c_jiyan_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_JiYan_01/c_jiyan_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_JiYan_01/Textures/c_jiyan_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1404,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_JiYan -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleJiyan.UiItem_LuckdrawRoleJiyan"
+        }
+      ]
+    },
+    {
+      "characterId": 1607,
+      "characterIds": [
+        1607
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_KanTeLeiLa_01/c_kanteleila_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_KanTeLeiLa_01/c_kanteleila_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_KanTeLeiLa_01/c_kanteleila_1.uasset",
+      "export": "c_kanteleila_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_KanTeLeiLa_01/c_kanteleila_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_KanTeLeiLa_01/Textures/c_kanteleila_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1607,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_KanTeLeiLa -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleKanteleila.UiItem_LuckdrawRoleKanteleila"
+        }
+      ]
+    },
+    {
+      "characterId": 1409,
+      "characterIds": [
+        1409
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_KaTiXiYa_01/c_katixiya_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_KaTiXiYa_01/c_katixiya_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_KaTiXiYa_01/c_katixiya_1.uasset",
+      "export": "c_katixiya_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_KaTiXiYa_01/c_katixiya_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_KaTiXiYa_01/Textures/c_katixiya_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1409,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_Katixiya -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleKatixiya.UiItem_LuckdrawRoleKatixiya"
+        }
+      ]
+    },
+    {
+      "characterId": 1107,
+      "characterIds": [
+        1107
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_KeLaiTa_01/c_kelaita_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_KeLaiTa_01/c_kelaita_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_KeLaiTa_01/c_kelaita_1-data.uasset",
+      "export": "c_kelaita_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_KeLaiTa_01/c_kelaita_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_KeLaiTa_01/c_kelaita_1.2"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1107,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_KeLaiTa -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleKelaita.UiItem_LuckdrawRoleKelaita"
+        }
+      ]
+    },
+    {
+      "characterId": 1512,
+      "characterIds": [
+        1512
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_LiLi_01/c_lili_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_LiLi_01/c_lili_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_LiLi_01/c_lili_1.uasset",
+      "export": "c_lili_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_LiLi_01/c_lili_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_LiLi_01/Textures/c_lili_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1512,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_LiLi -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleLiLi.UiItem_LuckdrawRoleLiLi"
+        }
+      ]
+    },
+    {
+      "characterId": 1509,
+      "characterIds": [
+        1509
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_LinNai_1/c_linnai_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_LinNai_1/c_linnai_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_LinNai_1/c_linnai_1.uasset",
+      "export": "c_linnai_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_LinNai_1/c_linnai_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_LinNai_1/Textures/c_linnai_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1509,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_LinNai -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleLinNai.UiItem_LuckdrawRoleLinNai"
+        }
+      ]
+    },
+    {
+      "characterId": 1511,
+      "characterIds": [
+        1511
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_Lucy_1/c_lucy_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_Lucy_1/c_lucy_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_Lucy_1/c_lucy_1.uasset",
+      "export": "c_lucy_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_Lucy_1/c_lucy_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_Lucy_1/Textures/c_lucy_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1511,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_LuXi -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleLuXi.UiItem_LuckdrawRoleLuXi"
+        }
+      ]
+    },
+    {
+      "characterId": 1510,
+      "characterIds": [
+        1510
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_LuHesi_1/c_luhesi_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_LuHesi_1/c_luhesi_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_LuHesi_1/c_luhesi_1.uasset",
+      "export": "c_luhesi_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_LuHesi_1/c_luhesi_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_LuHesi_1/Textures/c_luhesi_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1510,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_LuHeSi -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleLuHeSi.UiItem_LuckdrawRoleLuHeSi"
+        }
+      ]
+    },
+    {
+      "characterId": 1606,
+      "characterIds": [
+        1606
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_LuoKeKe_01/c_luokeke_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_LuoKeKe_01/c_luokeke_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_LuoKeKe_01/c_luokeke_1.uasset",
+      "export": "c_luokeke_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_LuoKeKe_01/c_luokeke_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_LuoKeKe_01/Textures/c_luokeke_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1606,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_luoKeKe -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleLuokeke.UiItem_LuckdrawRoleLuokeke"
+        }
+      ]
+    },
+    {
+      "characterId": 1109,
+      "characterIds": [
+        1109
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_LuoSeLa_01/c_luosela_01.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_LuoSeLa_01/c_luosela_01.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_LuoSeLa_01/c_luosela_01.uasset",
+      "export": "c_luosela_01-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_LuoSeLa_01/c_luosela_01.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_LuoSeLa_01/Textures/c_luosela_01.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1109,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_LuoSeLa -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleLuoSeLa.UiItem_LuckdrawRoleLuoSeLa"
+        }
+      ]
+    },
+    {
+      "characterId": 1207,
+      "characterIds": [
+        1207
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_LuPa_01/c_lupa_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_LuPa_01/c_lupa_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_LuPa_01/c_lupa_1.uasset",
+      "export": "c_lupa_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_LuPa_01/c_lupa_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_LuPa_01/Textures/c_lupa_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1207,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_Lupa -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleLupa.UiItem_LuckdrawRoleLupa"
+        }
+      ]
+    },
+    {
+      "characterId": 1209,
+      "characterIds": [
+        1209
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_MoNing_1/c_moning_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_MoNing_1/c_moning_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_MoNing_1/c_moning_1.uasset",
+      "export": "c_moning_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_MoNing_1/c_moning_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_MoNing_1/Textures/c_moning_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1209,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_MoNing -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleMoNing.UiItem_LuckdrawRoleMoNing"
+        }
+      ]
+    },
+    {
+      "characterId": 1508,
+      "characterIds": [
+        1508
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_QianXiao_1/c_qianxiao_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_QianXiao_1/c_qianxiao_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_QianXiao_1/c_qianxiao_1.uasset",
+      "export": "c_qianxiao_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_QianXiao_1/c_qianxiao_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_QianXiao_1/Textures/c_qianxiao_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1508,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_QianXiao -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleQianXiao.UiItem_LuckdrawRoleQianXiao"
+        }
+      ]
+    },
+    {
+      "characterId": 1413,
+      "characterIds": [
+        1413
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_QingXiao_1/c_qingxiao_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_QingXiao_1/c_qingxiao_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_QingXiao_1/c_qingxiao_1.uasset",
+      "export": "c_qingxiao_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_QingXiao_1/c_qingxiao_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_QingXiao_1/Textures/c_qingxiao_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1413,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_QingXiao -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleQingXiao.UiItem_LuckdrawRoleQingXiao"
+        }
+      ]
+    },
+    {
+      "characterId": 1411,
+      "characterIds": [
+        1411
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_QiuYuan_1/c_qiuyuan_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_QiuYuan_1/c_qiuyuan_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_QiuYuan_1/c_qiuyuan_1.uasset",
+      "export": "c_qiuyuan_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_QiuYuan_1/c_qiuyuan_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_QiuYuan_1/Textures/c_qiuyuan_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1411,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_QiuYuan -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleQiuYuan.UiItem_LuckdrawRoleQiuYuan"
+        }
+      ]
+    },
+    {
+      "characterId": 1308,
+      "characterIds": [
+        1308
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_Rebecca_1/c_rebecca_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_Rebecca_1/c_rebecca_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_Rebecca_1/c_rebecca_1.uasset",
+      "export": "c_rebecca_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_Rebecca_1/c_rebecca_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_Rebecca_1/Textures/c_rebecca_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1308,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_LiBeiKa -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleLiBeiKa.UiItem_LuckdrawRoleLiBeiKa"
+        }
+      ]
+    },
+    {
+      "characterId": 1505,
+      "characterIds": [
+        1505
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_ShouAnRen_01/c_shouanren_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_ShouAnRen_01/c_shouanren_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_ShouAnRen_01/c_shouanren_1.uasset",
+      "export": "c_shouanren_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_ShouAnRen_01/c_shouanren_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_ShouAnRen_01/Textures/c_shouanren_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1505,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_ShouAnRen -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleShouanren.UiItem_LuckdrawRoleShouanren"
+        }
+      ]
+    },
+    {
+      "characterId": 1110,
+      "characterIds": [
+        1110
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_SuiSui_01/c_suisui_01.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_SuiSui_01/c_suisui_01.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_SuiSui_01/c_suisui_01.uasset",
+      "export": "c_suisui_01-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_SuiSui_01/c_suisui_01.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_SuiSui_01/Textures/c_suisui_01.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1110,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_SuiSui -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleSuiSui.UiItem_LuckdrawRoleSuiSui"
+        }
+      ]
+    },
+    {
+      "characterId": 1312,
+      "characterIds": [
+        1312
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_SuoMing_01/c_suoming_01.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_SuoMing_01/c_suoming_01.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_SuoMing_01/c_suoming_01.uasset",
+      "export": "c_suoming_01-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_SuoMing_01/c_suoming_01.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_SuoMing_01/Textures/c_suoming_01.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1312,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_SuoMing -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleSuoMing.UiItem_LuckdrawRoleSuoMing"
+        }
+      ]
+    },
+    {
+      "characterId": 1407,
+      "characterIds": [
+        1407
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_XiaKong_01/c_xiakong_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_XiaKong_01/c_xiakong_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_XiaKong_01/c_xiakong_1.uasset",
+      "export": "c_xiakong_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_XiaKong_01/c_xiakong_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_XiaKong_01/Textures/c_xiakong_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1407,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_XiaKong -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleXiakong.UiItem_LuckdrawRoleXiakong"
+        }
+      ]
+    },
+    {
+      "characterId": 1305,
+      "characterIds": [
+        1305
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_XiangLiYao_01/c_xiangliyao_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_XiangLiYao_01/c_xiangliyao_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_XiangLiYao_01/c_xiangliyao_1.uasset",
+      "export": "c_xiangliyao_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_XiangLiYao_01/c_xiangliyao_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_XiangLiYao_01/Textures/c_xiangliyao_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1305,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_Xiangliyao -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleXiangliyao.UiItem_LuckdrawRoleXiangliyao"
+        }
+      ]
+    },
+    {
+      "characterId": 1412,
+      "characterIds": [
+        1412
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_XiGeLiKa_1/c_xigelika_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_XiGeLiKa_1/c_xigelika_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_XiGeLiKa_1/c_xigelika_1.uasset",
+      "export": "c_xigelika_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_XiGeLiKa_1/c_xigelika_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_XiGeLiKa_1/Textures/c_xigelika_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1412,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_XiGeLiKa -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleXiGeLiKa.UiItem_LuckdrawRoleXiGeLiKa"
+        }
+      ]
+    },
+    {
+      "characterId": 1311,
+      "characterIds": [
+        1311
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_Xin_01/c_xin_01.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_Xin_01/c_xin_01.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_Xin_01/c_xin_01.uasset",
+      "export": "c_xin_01-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_Xin_01/c_xin_01.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_Xin_01/Textures/c_xin_01.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1311,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_Xin -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleXin.UiItem_LuckdrawRoleXin"
+        }
+      ]
+    },
+    {
+      "characterId": 1610,
+      "characterIds": [
+        1610
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_XuanLing_1/c_xuanling_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_XuanLing_1/c_xuanling_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_XuanLing_1/c_xuanling_1.uasset",
+      "export": "c_xuanling_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_XuanLing_1/c_xuanling_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_XuanLing_1/Textures/c_xuanling_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1610,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_XuanLing -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleXuanLing.UiItem_LuckdrawRoleXuanLing"
+        }
+      ]
+    },
+    {
+      "characterId": 1302,
+      "characterIds": [
+        1302
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_YinLin_01/c_yinlin_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_YinLin_01/c_yinlin_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_YinLin_01/c_yinlin_1.uasset",
+      "export": "c_yinlin_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_YinLin_01/c_yinlin_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_YinLin_01/Textures/c_yinlin_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1302,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_Yinlin -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleYinlin.UiItem_LuckdrawRoleYinlin"
+        }
+      ]
+    },
+    {
+      "characterId": 1410,
+      "characterIds": [
+        1410
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_YouNuo_01/c_younuo_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_YouNuo_01/c_younuo_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_YouNuo_01/c_younuo_1.uasset",
+      "export": "c_younuo_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_YouNuo_01/c_younuo_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_YouNuo_01/Textures/c_younuo_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1410,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_Younuo -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleYounuo.UiItem_LuckdrawRoleYounuo"
+        }
+      ]
+    },
+    {
+      "characterId": 1507,
+      "characterIds": [
+        1507
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_ZanNi_01/c_zanni_1.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_ZanNi_01/c_zanni_1.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_ZanNi_01/c_zanni_1.uasset",
+      "export": "c_zanni_1-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_ZanNi_01/c_zanni_1.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_ZanNi_01/Textures/c_zanni_1.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1507,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_ZanNi -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleZanni.UiItem_LuckdrawRoleZanni"
+        }
+      ]
+    },
+    {
+      "characterId": 1105,
+      "characterIds": [
+        1105
+      ],
+      "category": "gacha",
+      "skeleton": "UI/UIResources/UiLuckdraw/Spine/Character/C_ZheZhi_01/c_zhezhi_01_0.skel",
+      "atlas": "UI/UIResources/UiLuckdraw/Spine/Character/C_ZheZhi_01/c_zhezhi_01.atlas",
+      "version": "4.1.23",
+      "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_ZheZhi_01/c_zhezhi_01.uasset",
+      "export": "c_zhezhi_01_0-data",
+      "textures": [
+        {
+          "file": "UI/UIResources/UiLuckdraw/Spine/Character/C_ZheZhi_01/c_zhezhi_01.png",
+          "source": "Client/Content/Aki/UI/UIResources/UiLuckdraw/Spine/Character/C_ZheZhi_01/Textures/c_zhezhi_01.1"
+        }
+      ],
+      "characterReferences": [
+        {
+          "characterId": 1105,
+          "source": "db_gacha.gachaviewinfo.SpinePrefabResource:GachaSpineItem_ZheZhi -> /Game/Aki/UI/UIResources/UiLuckdraw/Prefabs/LuckdrawRole/UiItem_LuckdrawRoleZhezhi.UiItem_LuckdrawRoleZhezhi"
+        }
+      ]
+    }
+  ]
+}
